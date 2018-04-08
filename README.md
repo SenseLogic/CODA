@@ -22,8 +22,7 @@ This coding standard favors code readability over compactness, by :
 
 ## Rules
 
-*   Develop the application and its components with simple, robust and efficient code 
-    which will be easy to understand, extend and debug by any programmer in the team.
+*   Develop the application and its components with simple, robust and efficient code which will be easy to understand, extend and debug by any programmer in the team.
     
 *   Develop any piece of code so that it's :
 
@@ -93,7 +92,7 @@ This coding standard favors code readability over compactness, by :
     *   Send, Receive
     *   Grant, Revoke
     
-*   Write all **types** in **UPPER_CASE**, without articles.
+*   Write **types** in **UPPER_CASE**, without articles.
 
     ```cs
     class TANK_SHELL
@@ -101,13 +100,13 @@ This coding standard favors code readability over compactness, by :
     }
     ```
     
-*   Write all **type members** (methods, attributes, etc) in **CamelCase**, without articles.
+*   Write **type members** (methods, attributes, constants, etc) in **CamelCase**, without articles.
 
     ```cs
     Tank.ShootShell();
     ```
     
-*   Write all **local variables** (including method parameters) in **snake_case**, without articles.
+*   Write **local variables** and **method parameters** in **snake_case**, without articles.
 
     ```cs
     player_name
@@ -259,8 +258,7 @@ This coding standard favors code readability over compactness, by :
 *   Try to declare all local variables at the start of the method, 
     to improve the algorithm readability.
     
-*   Group local variables of the same type, and sort the declarations by ascending types and names, 
-    so that the declaration of a variable can be located at a glance.
+*   Group local variables of the same type, and sort the declarations by ascending types and names, so that the declaration of a variable can be located at a glance.
 
     ```cs
     int
@@ -273,11 +271,9 @@ This coding standard favors code readability over compactness, by :
         target_name;
     ```
     
-*   Try to split statements on several lines if they become wider than 100 characters,
-    so that it's easy to edit two code files side by side on a single monitor.
+*   Try to split statements on several lines if they become wider than 100 characters, so that it's easy to edit two code files side by side on a single monitor.
     
-*   When splitting an expression on several lines, start the next lines with an operator, 
-    and align it with the start of its left operand (or else indent it by 4 spaces).
+*   When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
     
     ```
     if ( ( tower.GetDistance( 
@@ -317,8 +313,7 @@ This coding standard favors code readability over compactness, by :
     *   Operations (instance methods which can change the instance attributes)
     *   Functions (static methods which don't belong to any instance)
 
-*   In a class, declare the called methods before the calling methods,
-    so that the class code can be understood by a single sequential read.
+*   In a class, declare the called methods before the calling methods, so that the class code can be understood by a single sequential read.
 
 *   Use public attributes and methods, unless you really need to declare some of them as private.
 
@@ -394,8 +389,7 @@ This coding standard favors code readability over compactness, by :
 
 *   Don't use standard comments for empty sections.
     
-*   Align multiple lines comments with the surrounding statements, 
-    and write them as sentences.
+*   Align multiple lines comments with the surrounding statements, and write them as sentences.
 
     ```cs
     /*
@@ -406,8 +400,7 @@ This coding standard favors code readability over compactness, by :
     ...
     ```
     
-*   Align single line comments with the surrounding statements, 
-    and write them as sentences.
+*   Align single line comments with the surrounding statements, and write them as sentences.
 
     ```cs
     // A short explanation on a single line.
@@ -415,15 +408,13 @@ This coding standard favors code readability over compactness, by :
     ...
     ```
 
-*   Put end of line comments exactly four spaces after the statement, 
-    and start them in lowercase.
+*   Put end of line comments exactly four spaces after the statement, and start them in lowercase.
 
     ```cs
     some_variable = some_magic_value;    // a short explanation
     ```
     
-*   Instead of adding comments to explain the code intent,
-    refactor it to make it easy to understand without comments and improve its reusability.
+*   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments and improve its reusability.
 
 *   Begin C++ header files with `#pragma once`.
 
@@ -445,14 +436,11 @@ This coding standard favors code readability over compactness, by :
 
 *   First find what is really needed, by taking a few minutes to write :
     
-    *   a short text explaining how to use the application before implementing it,
-        to optimize its interface.
+    *   a short text explaining how to use the application before implementing it, to optimize its interface.
 
-    *   a short text explaining what the application components will do before implementing them,
-        to optimize their architecture.
+    *   a short text explaining what the application components will do before implementing them, to optimize their architecture.
         
-    *   a short text or test code explaining how the other programmers will use the application components,
-        to optimize their class interface.
+    *   a short text or test code explaining how the other programmers will use the application components, to optimize their class interface.
 
 ## Version
 
