@@ -14,7 +14,7 @@ Efficiently develop code and applications with the following qualities :
 
 ## Specificity
 
-This coding standard favors code readability over compactness, by :
+This coding standard favors the code readability over its compactness, by :
 
 *   Forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
 *   Using different letter cases for classes, class members and local variables;
@@ -26,7 +26,7 @@ This coding standard favors code readability over compactness, by :
     
 *   Develop any piece of code so that it's :
 
-    *   **easy to understand** just by itself;
+    *   easy to understand just by itself;
     *   impossible to guess who has actually worked on it.
         
 *   Use **American English** for all the code, including comments.
@@ -42,7 +42,7 @@ This coding standard favors code readability over compactness, by :
 
 *   Use **four spaces** instead of tabulations.
 
-*   Choose **short meaningful identifiers** for class, attribute, method and variable names.
+*   Choose **short meaningful identifiers** for class, attribute, method, constant and variable names.
 
 *   Use **standard prefixes** :
 
@@ -57,7 +57,7 @@ This coding standard favors code readability over compactness, by :
     *   Bottom, Top
     *   Minimum, Maximum
     *   Lower, Higher, Upper
-    *   Vertical, Horizontal
+    *   Horizontal, Vertical
     
 *   Use **standard suffixes** :
 
@@ -117,7 +117,7 @@ This coding standard favors code readability over compactness, by :
     ```cs
     TANK FindTank(
         int tank_identifier,
-        int first_tank_index
+        int first_tank_index,
         int post_tank_index
         )
     {
@@ -203,15 +203,22 @@ This coding standard favors code readability over compactness, by :
     }
     ```
 
-*   When the attribute type starts like its owner type, omit the common prefix in the attribute name.
+*   When the attribute name starts like its owner type, omit the common prefix.
 
     ```cs
     class TANK
     {
         TANK_SHELL[]
-            ShellArray;    // instead of TankShellArray
+            ShellArray;
         bool
-            IsDamaged;    // instead of TankIsDamaged
+            IsDamaged;
+            
+        void ShootShell(
+            TANK_SHELL tank_shell
+            )
+        {
+            ...
+        }
     }
     ```
     
@@ -255,8 +262,7 @@ This coding standard favors code readability over compactness, by :
         tank_index;
     ```
 
-*   Try to declare all local variables at the start of the method, 
-    to improve the algorithm readability.
+*   Try to declare all local variables at the start of the method, to improve the algorithm readability.
     
 *   Group local variables of the same type, and sort the declarations by ascending types and names, so that the declaration of a variable can be located at a glance.
 
@@ -301,6 +307,30 @@ This coding standard favors code readability over compactness, by :
     *   between a closing brace and the next statement.
     *   between a return statement and the prior statement;
     
+*   Use standard file extensions.
+
+    *   C# : cs
+    *   C : c, h
+    *   C++ : cpp, hpp
+    *   Javascript : js
+    *   HTML : html
+    *   CSS : css 
+    
+*   Declare one class per source code file.
+
+*   Use the class name in lowercase as file name.
+
+    ```cs
+    tank_shell.cpp
+    tank_shell.hpp
+    ```
+
+*   Use the class name in uppercase for Unity source code files.
+
+    ```cs
+    TANK_SHELL.cs
+    ```
+
 *   Group the class elements by category, declared in the same predefined order :
 
     *   Imports
@@ -316,31 +346,6 @@ This coding standard favors code readability over compactness, by :
 *   In a class, declare the called methods before the calling methods, so that the class code can be understood by a single sequential read.
 
 *   Use public attributes and methods, unless you really need to declare some of them as private.
-
-*   Use standard file extensions.
-
-    *   C# : cs
-    *   C++ : cpp, hpp
-    *   C : c, h
-    *   Javascript : js
-    *   HTML : html
-    *   CSS : css 
-    
-*   Declare one class per source code file.
-
-*   Use the class name in lowercase as file name.
-
-    ```cs
-    tank_shell.cs
-    tank_shell.cpp
-    tank_shell.hpp
-    ```
-
-*   Use the class name in uppercase for Unity source code files.
-
-    ```cs
-    TANK_SHELL.cs
-    ```
 
 *   Delimitate the code sections with standard comments.
 
@@ -411,10 +416,12 @@ This coding standard favors code readability over compactness, by :
 *   Put end of line comments exactly four spaces after the statement, and start them in lowercase.
 
     ```cs
-    some_variable = some_magic_value;    // a short explanation
+    DoSomethingWeird();    // a short explanation
     ```
     
-*   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments and improve its reusability.
+*   Instead of adding comments to explain the code intent, refactor it to :
+    *   make it easy to understand without comments;
+    *   improve its reusability.
 
 *   Begin C++ header files with `#pragma once`.
 
@@ -428,23 +435,20 @@ This coding standard favors code readability over compactness, by :
     ...
     ```
 
-*   Name the unit test class by simply adding the `_TEST` suffix to the class name.
+*   Name the unit test class by simply adding a `_TEST` suffix to the class name.
 
 ## Advices
 
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem.
 
 *   First find what is really needed, by taking a few minutes to write :
-    
-    *   a short text explaining how to use the application before implementing it, to optimize its interface.
-
-    *   a short text explaining what the application components will do before implementing them, to optimize their architecture.
-        
-    *   a short text or test code explaining how the other programmers will use the application components, to optimize their class interface.
+    *   a short text explaining how to use the application before implementing it, to optimize its external interface.
+    *   a short text explaining what the application components will do before implementing them, to optimize the internal architecture.
+    *   a short text or test code explaining to the other programmers how they will use the application components, to optimize the class interfaces.
 
 ## Version
 
-0.5
+1.0
 
 ## Author
 
