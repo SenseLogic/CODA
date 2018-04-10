@@ -281,7 +281,7 @@ This coding standard favors readability over compactness, by :
     
 *   When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
     
-    ```
+    ```cs
     if ( ( tower.GetDistance( 
                tower_target,
                weapon_type
@@ -298,14 +298,14 @@ This coding standard favors readability over compactness, by :
 
     *   after `(` `[` `,`
     *   before `)` `]`
-    *   after `if' `while` `for` ...
+    *   after `if` `while` `for` ...
 
 *   Add exactly one empty line :
 
     *   after a standard comment;
     *   after the local variable declarations;
-    *   between a closing brace and the next statement.
-    *   between a return statement and the prior statement;
+    *   between a closing brace and the next statement;
+    *   between a return statement and the prior statement.
     
 *   Use standard file extensions.
 
@@ -333,15 +333,16 @@ This coding standard favors readability over compactness, by :
 
 *   Group the class elements by category, declared in the same predefined order :
 
-    *   Imports
-    *   Constants
-    *   Attributes
-    *   Constructors
-    *   Destructor
-    *   Operators
-    *   Inquiries (instance methods which won't change the instance attributes)
-    *   Operations (instance methods which can change the instance attributes)
-    *   Functions (static methods which don't belong to any instance)
+    *   Imports.
+    *   Types.
+    *   Constants.
+    *   Attributes.
+    *   Constructors.
+    *   Destructor.
+    *   Operators.
+    *   Inquiries : instance methods which can't change the instance attributes.
+    *   Operations : instance methods which can change the instance attributes.
+    *   Functions : static methods.
 
 *   In a class, declare the called methods before the calling methods, so that the class code can be understood by a single sequential read.
 
@@ -442,9 +443,9 @@ This coding standard favors readability over compactness, by :
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem.
 
 *   First find what is really needed, by taking a few minutes to write :
-    *   a short text explaining how to use the application before implementing it, to optimize its external interface.
-    *   a short text explaining what the application components will do before implementing them, to optimize the internal architecture.
-    *   a short text or test code explaining to the other programmers how they will use the application components, to optimize the class interfaces.
+    *   a short text explaining how to use the application, to optimize the application interface before implementing it;
+    *   a short text explaining what the application components will do, to optimize the application architecture before implementing them;
+    *   a short text or test code explaining to the other programmers how they will use the application components, to optimize their interface before implementing them.
 
 ## Version
 
