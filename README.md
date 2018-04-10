@@ -4,21 +4,21 @@
 
 Efficiently develop code and applications with the following qualities :
 
-*   **robust** : runs without crash and protects the data from being lost or corrupted.
-*   **secure** : protects the data from being stolen or hacked.
-*   **ergonomic** : can be used in an productive and intuitive manner.
-*   **efficient** : minimizes processing times to maximize the user productivity.
-*   **maintainable** : is easy to fix and enhance by any programmer in the team.
-*   **extensible** : is easy to extend with new features by reusing existing components.
-*   **consistent** : looks like it has been designed and implemented by a single developer.
+*   **Robust** : runs without crash and protects the data from being lost or corrupted.
+*   **Secure** : protects the data from being stolen or hacked.
+*   **Ergonomic** : can be used in an productive and intuitive manner.
+*   **Efficient** : minimizes processing times to maximize the user productivity.
+*   **Maintainable** : is easy to fix and enhance by any programmer in the team.
+*   **Extensible** : is easy to extend with new features by reusing existing components.
+*   **Consistent** : looks like it has been designed and implemented by a single developer.
 
 ## Specificity
 
-This coding standard favors the code readability over its compactness, by :
+This coding standard favors readability over compactness, by :
 
 *   Forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
 *   Using different letter cases for classes, class members and local variables;
-*   Including the type name in the attribute and variable names.
+*   Including the class name in the attribute and variable names.
 
 ## Rules
 
@@ -241,7 +241,7 @@ This coding standard favors the code readability over its compactness, by :
     }
     ```
     
-*   Put braces around your repeated or conditional code even for one line of code.
+*   Use braces even for single statement blocks.
 
     ```cs
     if ( remaining_shell_count > 0 )
