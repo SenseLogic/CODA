@@ -23,12 +23,12 @@ This coding standard favors readability over compactness, by :
 ## Rules
 
 *   Develop the application and its components with simple, robust and efficient code which will be easy to understand, extend and debug by any programmer in the team.
-    
+
 *   Develop any piece of code so that it's :
 
     *   easy to understand just by itself;
     *   impossible to guess who has actually worked on it.
-        
+
 *   Use **American English** for all the code, including comments.
 
     ```cs
@@ -53,17 +53,17 @@ This coding standard favors readability over compactness, by :
     *   Old, New
     *   Backward, Forward
     *   Left, Right
-    *   Back, Front 
+    *   Back, Front
     *   Bottom, Top
     *   Minimum, Maximum
     *   Lower, Higher, Upper
     *   Horizontal, Vertical
-    
+
 *   Use **standard suffixes** :
 
     *   Index, Count
     *   Array, List, Map, Dictionary
-    
+
 *   Use **standard verbs** :
 
     *   Initialize, Update, Finalize
@@ -91,25 +91,51 @@ This coding standard favors readability over compactness, by :
     *   Connect, Disconnect
     *   Send, Receive
     *   Grant, Revoke
-    
-*   Write **types** in **UPPER_CASE**, without articles.
+
+*   Write your **types** in **UPPER_CASE**, without articles.
 
     ```cs
     class TANK_SHELL
     {
+        VECTOR_3
+            PositionVector;
+        QUATERNION
+            RotationQuaternion;
+
+        ...
     }
     ```
-    
-*   Write **type members** (methods, attributes, constants, etc) in **CamelCase**, without articles.
+
+*   Write your **type members** (methods, attributes, constants, etc) in **PascalCase**, without articles.
 
     ```cs
-    Tank.ShootShell();
+    ShootShell(
+        Muzzle.PositionVector,
+        Muzzle.RotationQuaternion
+        );
     ```
-    
-*   Write **local variables** and **method parameters** in **snake_case**, without articles.
+
+*   Write your **local variables** and **method parameters** in **snake_case**, without articles.
 
     ```cs
-    player_name
+    void ShootShell(
+        VECTOR_3 shell_position_vector,
+        QUATERNION shell_rotation_quaternion
+        )
+    {
+        TANK_SHELL
+            shot_tank_shell;
+
+        ...
+
+        shot_tank_shell
+            = new TANK_SHELL(
+                  shell_position_vector,
+                  shell_rotation_quaternion
+                  );
+
+        ...
+    }
     ```
 
 *   Don't use acronyms, abbreviations or single-letter variables.
@@ -123,7 +149,7 @@ This coding standard favors readability over compactness, by :
     {
         int
             tank_index;
-            
+
         for ( tank_index = first_tank_index;
               tank_index < post_tank_index;    // no i, j, n, etc
               ++tank_index )
@@ -133,7 +159,7 @@ This coding standard favors readability over compactness, by :
                 return TankArray[ tank_index ];
             }
         }
-        
+
         return null;
     }
     ```
@@ -150,7 +176,7 @@ This coding standard favors readability over compactness, by :
     ```cs
     CLASS
         class_;
-        
+
     class_ = new CLASS;
     ```
 
@@ -166,18 +192,18 @@ This coding standard favors readability over compactness, by :
     VECTOR_3
         InitialShellPositionVector,
         TankVelocityVector;
-        
+
     void ShootShell(
         )
     {
         SHELL
             last_shot_shell,
             shot_shell;
-        
+
         ...
     }
     ```
-    
+
 *   Start method names by a verb in the imperative mood (Set, Get, Find, ...).
 
 *   Use a verb in the indicative mood for boolean inquiries (Is, Has, Can, ...).
@@ -212,7 +238,7 @@ This coding standard favors readability over compactness, by :
             ShellArray;
         bool
             IsDamaged;
-            
+
         void ShootShell(
             TANK_SHELL tank_shell
             )
@@ -221,7 +247,7 @@ This coding standard favors readability over compactness, by :
         }
     }
     ```
-    
+
 *   Align matching braces.
 
     ```cs
@@ -230,9 +256,9 @@ This coding standard favors readability over compactness, by :
     {
         return ShotShellCount < MaximumShellCount;
     }
-    
+
     // ~~
-    
+
     void ShootShell(
         VECTOR_3 initial_velocity_vector
         )
@@ -240,7 +266,7 @@ This coding standard favors readability over compactness, by :
         ...
     }
     ```
-    
+
 *   Use braces even for single statement blocks.
 
     ```cs
@@ -263,7 +289,7 @@ This coding standard favors readability over compactness, by :
     ```
 
 *   Try to declare all local variables at the start of the method, to improve the algorithm readability.
-    
+
 *   Group local variables of the same type, and sort the declarations by ascending types and names, so that the declaration of a variable can be located at a glance.
 
     ```cs
@@ -276,13 +302,13 @@ This coding standard favors readability over compactness, by :
         player_name,
         target_name;
     ```
-    
+
 *   Try to split statements on several lines if they become wider than 100 characters, so that it's easy to edit two code files side by side on a single monitor.
-    
+
 *   When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
-    
+
     ```cs
-    if ( ( tower.GetDistance( 
+    if ( ( tower.GetDistance(
                tower_target,
                weapon_type
                )
@@ -290,10 +316,10 @@ This coding standard favors readability over compactness, by :
          || ( tank_distance > maximum distance
               && tank_health > 0.5 ) )
     {
-        
+
     }
     ```
-    
+
 *   Add exactly one space :
 
     *   after `(` `[` `,`
@@ -306,7 +332,7 @@ This coding standard favors readability over compactness, by :
     *   after the local variable declarations;
     *   between a closing brace and the next statement;
     *   between a return statement and the prior statement.
-    
+
 *   Use standard file extensions.
 
     *   C# : cs
@@ -314,8 +340,8 @@ This coding standard favors readability over compactness, by :
     *   C++ : cpp, hpp
     *   Javascript : js
     *   HTML : html
-    *   CSS : css 
-    
+    *   CSS : css
+
 *   Declare one class per source code file.
 
 *   Use the class name in lowercase as file name.
@@ -352,49 +378,49 @@ This coding standard favors readability over compactness, by :
 
     ```cs
     // -- IMPORTS
-    
+
     ...
-    
+
     // -- TYPES
-    
+
     class NAME
     {
         // -- CONSTANTS
-        
+
         ...
-        
+
         // -- ATTRIBUTES
-        
+
         ...
-        
+
         // -- CONSTRUCTORS
-        
+
         ...
-        
+
         // -- DESTRUCTOR
-        
+
         ...
-        
+
         // -- OPERATORS
-        
+
         ...
-        
+
         // -- INQUIRIES
-        
+
         ...
-        
+
         // -- OPERATIONS
-        
+
         ...
-        
+
         // -- FUNCTIONS
-        
+
         ...
     }
     ```
 
 *   Don't use standard comments for empty sections.
-    
+
 *   Align multiple lines comments with the surrounding statements, and write them as sentences.
 
     ```cs
@@ -402,15 +428,15 @@ This coding standard favors readability over compactness, by :
         A long explanation which is so long that it will have to be
         be split on several lines.
     */
-    
+
     ...
     ```
-    
+
 *   Align single line comments with the surrounding statements, and write them as sentences.
 
     ```cs
     // A short explanation on a single line.
-    
+
     ...
     ```
 
@@ -419,7 +445,7 @@ This coding standard favors readability over compactness, by :
     ```cs
     DoSomethingWeird();    // a short explanation
     ```
-    
+
 *   Instead of adding comments to explain the code intent, refactor it to :
     *   make it easy to understand without comments;
     *   improve its reusability.
