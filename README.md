@@ -204,6 +204,8 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
+*   Use a noun or noun phrase for classes, constants, attributes and variables.
+
 *   Start method names by a verb in the imperative mood (Set, Get, Find, ...).
 
 *   Use a verb in the indicative mood for boolean inquiries (Is, Has, Can, ...).
