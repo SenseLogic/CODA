@@ -353,7 +353,7 @@ This coding standard favors readability over compactness, by :
     tank_shell.hpp
     ```
 
-*   Use the class name in uppercase for Unity source code files.
+*   Use the class name in uppercase as Unity file name.
 
     ```cs
     TANK_SHELL.cs
