@@ -92,7 +92,7 @@ This coding standard favors readability over compactness, by :
     *   Send, Receive
     *   Grant, Revoke
 
-*   Write your **types** in **UPPER_CASE**, without articles.
+*   Write your **types** (classes, structures, enumerations, etc) in **UPPER_CASE**, without articles.
 
     ```cs
     class TANK_SHELL
