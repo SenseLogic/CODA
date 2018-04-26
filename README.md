@@ -6,7 +6,7 @@ Efficiently develop code and applications with the following qualities :
 
 *   **Robust** : runs without crash and protects the data from being lost or corrupted.
 *   **Secure** : protects the data from being stolen or hacked.
-*   **Ergonomic** : can be used in an productive and intuitive manner.
+*   **Ergonomic** : does exactly what the user needs and can be used in an productive and intuitive manner.
 *   **Efficient** : minimizes processing times to maximize the user productivity.
 *   **Maintainable** : is easy to fix and enhance by any programmer in the team.
 *   **Extensible** : is easy to extend with new features by reusing existing components.
@@ -40,7 +40,7 @@ This coding standard favors readability over compactness, by :
 
 *   Use the **second** as the default time unit.
 
-*   Use **four spaces** instead of tabulations.
+*   Use **four spaces** instead of tabulations, so that the code indentation does not depend on the editor settings.
 
 *   Choose **short meaningful identifiers** for class, attribute, method, constant and variable names.
 
@@ -58,6 +58,7 @@ This coding standard favors readability over compactness, by :
     *   Minimum, Maximum
     *   Lower, Higher, Upper
     *   Horizontal, Vertical
+    *   Local, Global
 
 *   Use **standard suffixes** :
 
@@ -180,7 +181,9 @@ This coding standard favors readability over compactness, by :
     class_ = new CLASS;
     ```
 
-*   Include the class name (without numbers) in the attribute and variable names.
+*   Use a noun or noun phrase for classes, constants, attributes and variables.
+
+*   Use the meaningful part of the class name for attribute and variable names.
 
     ```cs
     Dictionary<PLAYER, string>
@@ -204,9 +207,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Use a noun or noun phrase for classes, constants, attributes and variables.
-
-*   Start method names by a verb in the imperative mood (Set, Get, Find, ...).
+*   Use a verb in the imperative mood for methods (Set, Get, Find, ...).
 
 *   Use a verb in the indicative mood for boolean inquiries (Is, Has, Can, ...).
 
@@ -326,14 +327,15 @@ This coding standard favors readability over compactness, by :
 
     *   after `(` `[` `,`
     *   before `)` `]`
-    *   after `if` `while` `for` ...
+    *   after `if` `while` `for` `foreach` `return` ...
+    *   before and after operators
 
 *   Add exactly one empty line :
 
-    *   after a standard comment;
+    *   before and after a standard comment;
     *   after the local variable declarations;
-    *   between a closing brace and the next statement;
-    *   between a return statement and the prior statement.
+    *   between `}` and the next statement;
+    *   between `if` `while` `for` `foreach` `do` `return` and the prior statement.
 
 *   Use standard file extensions.
 
@@ -368,9 +370,8 @@ This coding standard favors readability over compactness, by :
     *   Constructors.
     *   Destructor.
     *   Operators.
-    *   Inquiries : instance methods which can't change the instance attributes.
-    *   Operations : instance methods which can change the instance attributes.
-    *   Functions : static methods.
+    *   Inquiries : methods which don't change the class attributes.
+    *   Operations : methods which change the class attributes.
 
 *   In a class, declare the called methods before the calling methods, so that the class code can be understood by a single sequential read.
 
@@ -412,10 +413,6 @@ This coding standard favors readability over compactness, by :
         ...
 
         // -- OPERATIONS
-
-        ...
-
-        // -- FUNCTIONS
 
         ...
     }
