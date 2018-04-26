@@ -183,7 +183,7 @@ This coding standard favors readability over compactness, by :
 
 *   Use a noun or noun phrase for classes, constants, attributes and variables.
 
-*   Use the meaningful part of the class name for attribute and variable names.
+*   Include the meaningful part of the class name in attribute and variable names.
 
     ```cs
     Dictionary<PLAYER, string>
