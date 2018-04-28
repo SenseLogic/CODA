@@ -40,9 +40,9 @@ This coding standard favors readability over compactness, by :
 
 *   Use the **second** as the default time unit.
 
-*   Use **four spaces** instead of tabulations, so that the code indentation does not depend on the editor settings.
+*   Use **four spaces** instead of tabulations, to make the code independent of the editor settings.
 
-*   Choose **short meaningful identifiers** for class, attribute, method, constant and variable names.
+*   Choose **short meaningful identifiers** for class, attribute, method, constant and variable names, to prevent ambiguity and cognitive load.
 
 *   Use **standard prefixes** :
 
@@ -93,7 +93,7 @@ This coding standard favors readability over compactness, by :
     *   Send, Receive
     *   Grant, Revoke
 
-*   Write your **types** (classes, structures, enumerations, etc) in **UPPER_CASE**, without articles.
+*   Name your **types** (classes, structures, enumerations, etc) in **UPPER_CASE**, without articles.
 
     ```cs
     class TANK_SHELL
@@ -107,7 +107,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Write your **type members** (methods, attributes, constants, etc) in **PascalCase**, without articles.
+*   Name your **type members** (methods, attributes, constants, etc) in **PascalCase**, without articles.
 
     ```cs
     ShootShell(
@@ -116,7 +116,7 @@ This coding standard favors readability over compactness, by :
         );
     ```
 
-*   Write your **local variables** and **method parameters** in **snake_case**, without articles.
+*   Name your **local variables** and **method parameters** in **snake_case**, without articles.
 
     ```cs
     void ShootShell(
@@ -139,7 +139,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Don't use acronyms, abbreviations or single-letter variables.
+*   Don't use abbreviations or single-letter variables.
 
     ```cs
     TANK FindTank(
@@ -165,7 +165,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   If you really have to use an acronym, capitalize it in member names.
+*   Avoid acronyms, and capitalize them in member names.
 
     ```cs
     DATABASE_URL
@@ -181,7 +181,7 @@ This coding standard favors readability over compactness, by :
     class_ = new CLASS;
     ```
 
-*   Use a noun or noun phrase for classes, constants, attributes and variables.
+*   Use a noun or noun phrase for classes, constants, attributes and variable names.
 
 *   Include the meaningful part of the class name in attribute and variable names.
 
@@ -207,9 +207,9 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Use a verb in the imperative mood for methods (Set, Get, Find, ...).
+*   Start method names with a verb in the imperative mood (Set, Get, Find, ...).
 
-*   Use a verb in the indicative mood for boolean inquiries (Is, Has, Can, ...).
+*   Start boolean inquiry names with a verb in the indicative mood (Is, Has, Can, ...).
 
 *   Declare the method parameters in the same order as in the method name.
 
@@ -223,7 +223,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Use a positive affirmation for boolean variables and attributes.
+*   Use a positive affirmation for boolean variable and attribute names.
 
     ```cs
     if ( game_is_paused )
@@ -232,7 +232,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   When the attribute name starts like its owner type, omit the common prefix.
+*   If an attribute name starts like its owner class name, omit the common prefix.
 
     ```cs
     class TANK
@@ -270,16 +270,20 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Use braces even for single statement blocks.
+*   Use braces for single statement blocks.
 
     ```cs
-    if ( remaining_shell_count > 0 )
+    if ( LoadedAmmunitionCount > 0 )
     {
-        ShootShell();
+        ShootBullet();
+    }
+    else if ( CarriedAmmunitionCount > 0 )
+    {
+        ReloadWeapon();
     }
     else
     {
-        Reload();
+        NoAmmunitionSound.Play();
     }
     ```
 
@@ -304,9 +308,13 @@ This coding standard favors readability over compactness, by :
     string
         player_name,
         target_name;
+    TANK
+        enemy_tank;
+    TANK[]
+        remaining_tank_array;
     ```
 
-*   Try to split statements on several lines if they become wider than 100 characters, so that it's easy to edit two code files side by side on a single monitor.
+*   Split statements on several lines when they become wider than 100 characters, to be able to edit two code files side by side on a single monitor.
 
 *   When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
 
@@ -319,7 +327,7 @@ This coding standard favors readability over compactness, by :
          || ( tank_distance > maximum distance
               && tank_health > 0.5 ) )
     {
-
+        ...
     }
     ```
 
@@ -328,14 +336,15 @@ This coding standard favors readability over compactness, by :
     *   after `(` `[` `,`
     *   before `)` `]`
     *   after `if` `while` `for` `foreach` `return` ...
-    *   before and after operators
+    *   around operators
 
 *   Add exactly one empty line :
 
-    *   before and after a standard comment;
+    *   around standard comments;
     *   after the local variable declarations;
-    *   between `}` and the next statement;
-    *   between `if` `while` `for` `foreach` `do` `return` and the prior statement.
+    *   after the method preconditions;
+    *   between `if` `while` `for` `foreach` `do` `return` and the prior statement;
+    *   between `}` and the next statement.
 
 *   Use standard file extensions.
 
@@ -373,9 +382,11 @@ This coding standard favors readability over compactness, by :
     *   Inquiries : methods which don't change the class attributes.
     *   Operations : methods which change the class attributes.
 
-*   In a class, declare the called methods before the calling methods, so that the class code can be understood by a single sequential read.
+*   Within a category, declare the called methods before the calling methods, preferably in the order they will be called, so that the class code can be immediately understood by a single sequential read.
 
-*   Use public attributes and methods, unless you really need to declare some of them as private.
+*   Declare the static members after the non-static members.
+
+*   Use public attributes and methods, unless you need to declare them as private.
 
 *   Delimitate the code sections with standard comments.
 
@@ -420,26 +431,26 @@ This coding standard favors readability over compactness, by :
 
 *   Don't use standard comments for empty sections.
 
-*   Align multiple lines comments with the surrounding statements, and write them as sentences.
+*   Align multiple lines comments with the surrounding statements, start them with an uppercase character and end them with a period.
 
     ```cs
     /*
-        A long explanation which is so long that it will have to be
-        be split on several lines.
+        A long explanation which must be written
+        on several lines.
     */
 
     ...
     ```
 
-*   Align single line comments with the surrounding statements, and write them as sentences.
+*   Align single line comments with the surrounding statements, start them with an uppercase character and end them with a period.
 
     ```cs
-    // A short explanation on a single line.
+    // A short explanation which can be written on a single line.
 
     ...
     ```
 
-*   Put end of line comments exactly four spaces after the statement, and start them in lowercase.
+*   Put end of line comments exactly four spaces after the statement, and start them with lowercase character.
 
     ```cs
     DoSomethingWeird();    // a short explanation
