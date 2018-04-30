@@ -297,7 +297,7 @@ This coding standard favors readability over compactness, by :
 
 *   Try to declare all local variables at the start of the method, to improve the algorithm readability.
 
-*   Group local variables of the same type, and sort the declarations by ascending types and names, so that the declaration of a variable can be located at a glance.
+*   Group local variables of the same type, and sort the declarations by ascending types (lowercase, then PascalCase, then UPPER_CASE) and variable names, so that the declaration of a variable can be located at a glance.
 
     ```cs
     int
@@ -308,13 +308,17 @@ This coding standard favors readability over compactness, by :
     string
         player_name,
         target_name;
+    CharacterController
+        character_controller;
+    NavMeshAgent
+        navigation_mesh_agent;
     TANK
         enemy_tank;
     TANK[]
-        remaining_tank_array;
+        enemy_tank_array;
     ```
 
-*   Split statements on several lines when they become wider than 100 characters, to be able to edit two code files side by side on a single monitor.
+*   Try to split statements on several lines when they become wider than 120 characters, to be able to edit two code files side by side on a single monitor.
 
 *   When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
 
@@ -382,9 +386,13 @@ This coding standard favors readability over compactness, by :
     *   Inquiries : methods which don't change the class attributes.
     *   Operations : methods which change the class attributes.
 
-*   Within a category, declare the called methods before the calling methods, preferably in the order they will be called, so that the class code can be immediately understood by a single sequential read.
+*   Within a category, declare :
+    *    the called methods before the calling methods, preferably in the order they will be called, so that the class code can be immediately understood by a single sequential read.
+    *    the static members after the non-static members.
 
-*   Declare the static members after the non-static members.
+*   Import exactly what each file needs to be compiled independently, and nothing more.
+
+*   Sort the imports by ascending names.
 
 *   Use public attributes and methods, unless you need to declare them as private.
 
@@ -478,10 +486,14 @@ This coding standard favors readability over compactness, by :
 
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem.
 
-*   First find what is really needed, by taking a few minutes to write :
+*   First take a few minutes to find what is really needed, by writing :
     *   a short text explaining how to use the application, to optimize the application interface before implementing it;
-    *   a short text explaining what the application components will do, to optimize the application architecture before implementing them;
-    *   a short text or test code explaining to the other programmers how they will use the application components, to optimize their interface before implementing them.
+    *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
+    *   a short text or test code explaining how to use the application components, to optimize their external interface before implementing it.
+
+*   Develop programs gradually, one feature at a time, using simple and efficient code.
+
+*   Immediately refactor any application component which starts to exhibit design or implementation flaws.
 
 ## Version
 
