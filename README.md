@@ -68,12 +68,13 @@ This coding standard favors readability over compactness, by :
 *   Use **standard verbs** :
 
     *   Initialize, Update, Finalize
-    *   Is, Has
-    *   Reset, Set, Get, Find
+    *   Create, Release, Destroy
+    *   Build, Apply
     *   Clear, Fill
+    *   Reset, Set, Get, Find
+    *   Is, Has
     *   Add, Remove
     *   AddFirst, AddLast
-    *   Create, Destroy
     *   Start, Stop
     *   Begin, End
     *   Enter, Exit
@@ -81,11 +82,11 @@ This coding standard favors readability over compactness, by :
     *   Read, Write
     *   Load, Save
     *   Pause, Resume
-    *   Enable, Disable
     *   Lock, Unlock
+    *   Attach, Detach
+    *   Enable, Disable
     *   Select, Deselect
     *   Activate, Deactivate
-    *   Attach, Detach
     *   Increment, Decrement
     *   Increase, Decrease
     *   Compress, Decompress
@@ -335,6 +336,12 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
+*   Put the scalar or constant multiplier after the multiplicand expression.
+
+    ```cs
+    average_value = ( first_value + second_value ) * 0.5f;
+    ```
+    
 *   Add exactly one space :
 
     *   after `(` `[` `,`
@@ -464,10 +471,6 @@ This coding standard favors readability over compactness, by :
     DoSomethingWeird();    // a short explanation
     ```
 
-*   Instead of adding comments to explain the code intent, refactor it to :
-    *   make it easy to understand without comments;
-    *   improve its reusability.
-
 *   Begin C++ header files with `#pragma once`.
 
     ```cs
@@ -493,7 +496,13 @@ This coding standard favors readability over compactness, by :
 
 *   Develop programs gradually, one feature at a time, using simple and efficient code.
 
-*   Immediately refactor any application component which starts to exhibit design or implementation flaws.
+*   Don't overgineer your code, choose simple modular designs which efficiently solve the current use cases, and can easily be extended in the future.
+
+*   Immediately refactor components when it's needed to improve their modularity and reusability.
+
+*   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments.
+
+*   Replace lengthy methods by a short one which call a few other short methods doing just one thing.
 
 ## Version
 
