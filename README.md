@@ -74,7 +74,7 @@ This coding standard favors readability over compactness, by :
     *   Reset, Set, Get, Find
     *   Is, Has
     *   Add, Remove
-    *   AddFirst, AddLast
+    *   Prepend, Insert, Append
     *   Start, Stop
     *   Begin, End
     *   Enter, Exit
@@ -490,7 +490,7 @@ This coding standard favors readability over compactness, by :
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem.
 
 *   First take a few minutes to find what is really needed, by writing :
-    *   a short text explaining how to use the application, to optimize the application interface before implementing it;
+    *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
     *   a short text or test code explaining how to use the application components, to optimize their external interface before implementing it.
 
@@ -502,7 +502,7 @@ This coding standard favors readability over compactness, by :
 
 *   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments.
 
-*   Replace lengthy methods by a short one which call a few other short methods doing just one thing.
+*   Replace too lengthy methods by a short ones which call other short methods.
 
 ## Version
 
