@@ -502,7 +502,7 @@ This coding standard favors readability over compactness, by :
 
 *   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments.
 
-*   Replace too lengthy methods by a short ones which call other short methods.
+*   If a method gets much too lengthy, split its code into several methods and call them in sequence.
 
 ## Version
 
