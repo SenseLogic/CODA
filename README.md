@@ -74,7 +74,8 @@ This coding standard favors readability over compactness, by :
     *   Reset, Set, Get, Find
     *   Is, Has
     *   Add, Remove
-    *   Prepend, Insert, Append
+    *   AddFirst, RemoveFirst
+    *   AddLast, RemoveLast
     *   Start, Stop
     *   Begin, End
     *   Enter, Exit
@@ -487,22 +488,20 @@ This coding standard favors readability over compactness, by :
 
 ## Advices
 
-*   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem.
-
-*   First take a few minutes to find what is really needed, by writing :
+*   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
     *   a short text or test code explaining how to use the application components, to optimize their external interface before implementing it.
 
 *   Develop programs gradually, one feature at a time, using simple and efficient code.
 
-*   Don't overgineer your code, choose simple modular designs which efficiently solve the current use cases, and can easily be extended in the future.
+*   Don't overgineer your code, choose simple modular designs which can easily be extended.
 
-*   Immediately refactor components when it's needed to improve their modularity and reusability.
+*   Immediately refactor components when their modularity or reusability needs to be improved.
 
-*   Instead of adding comments to explain the code intent, refactor it to make it easy to understand without comments.
+*   Refactor the code to make it easy to understand, instead of adding comments to explain its intent.
 
-*   If a method gets much too lengthy, split its code into several methods and call them in sequence.
+*   As soon as a method gets too lengthy, split it into several methods and call them in sequence.
 
 ## Version
 
