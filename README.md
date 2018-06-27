@@ -320,7 +320,7 @@ This coding standard favors readability over compactness, by :
         enemy_tank_array;
     ```
 
-* Split statements and expressions on several lines when they become complicated or wider than 140 characters.
+* Split statements and expressions on several lines when they contain boolean operators or if they become complicated or wider than 150 characters.
 
 * When splitting an expression on several lines, start the next lines with an operator and align it with the start of its left operand (or else indent it by 4 spaces).
 
