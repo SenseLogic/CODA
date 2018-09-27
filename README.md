@@ -504,6 +504,9 @@ This coding standard favors readability over compactness, by :
     - using local variables to store intermediate results;
     - splitting putting the code of a lengthy method into smaller methods called in sequence.
 
+*   Use assertions to check the validity of the method parameters in the debug build,
+    but make the application resilient to external factors (network, disk, memory, etc).
+
 ## Version
 
 1.0
