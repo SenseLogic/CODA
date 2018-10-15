@@ -505,7 +505,7 @@ This coding standard favors readability over compactness, by :
     - splitting putting the code of a lengthy method into smaller methods called in sequence.
 
 *   Use assertions to check the validity of the method parameters in the debug build,
-    but make the application resilient to external factors (network, disk, memory, etc).
+    but make the application resilient to external conditions (network failures, missing or corrupted files, etc).
 
 ## Version
 
