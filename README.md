@@ -493,8 +493,9 @@ This coding standard favors readability over compactness, by :
 *   Whenever possible :
 
     *   Use only public attributes and methods.
-    *   Don't use getters/setters and virtual methods.
-    *   Use virtual methods instead of delegates.
+    *   Don't use getters/setters.
+    *   Use virtual methods only where needed.
+    *   Avoid delegates.
 
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
