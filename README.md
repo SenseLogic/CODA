@@ -402,8 +402,6 @@ This coding standard favors readability over compactness, by :
 
 * Sort the imports by ascending names.
 
-* Use public attributes and methods, unless you need to declare them as private.
-
 * Delimitate the code sections with standard comments.
 
     ```cs
@@ -486,6 +484,12 @@ This coding standard favors readability over compactness, by :
 
 * Name the unit test class by simply adding a `_TEST` suffix to the class name.
 
+## Guidelines
+
+*   Use public attributes and methods.
+*   Don't use getters/setters and virtual methods unless needed.
+*   Prefer virtual methods to delegates.
+
 ## Advices
 
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
@@ -500,12 +504,13 @@ This coding standard favors readability over compactness, by :
 *   Immediately refactor components when their modularity or reusability needs to be improved.
 
 *   Instead of adding comments to explain the code intent, refactor the code to make it easy to understand by :
-    - choosing better method and parameter names;
-    - using local variables to store intermediate results;
-    - splitting putting the code of a lengthy method into smaller methods called in sequence.
+    *   choosing better method and parameter names;
+    *   using local variables to store intermediate results;
+    *   splitting putting the code of a lengthy method into smaller methods called in sequence.
 
-*   Use assertions to check the validity of the method parameters in the debug build,
-    but make the application resilient to external conditions (network failures, missing or corrupted files, etc).
+*   Make the application resilient to external conditions (network failures, missing or corrupted files, etc).
+
+*   Check invalid method parameters with assertions only in the debug build.
 
 ## Version
 
