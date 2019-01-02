@@ -490,13 +490,14 @@ This coding standard favors readability over compactness, by :
 
 ## Guidelines
 
-*   Use public attributes and methods.
-*   Don't use getters/setters and virtual methods unless needed.
-*   Prefer virtual methods to delegates.
+*   Whenever possible :
 
-## Advices
+    *   Use only public attributes and methods.
+    *   Don't use getters/setters and virtual methods.
+    *   Use virtual methods instead of delegates.
 
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
+
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
     *   a short text or test code explaining how to use the application components, to optimize their external interface before implementing it.
