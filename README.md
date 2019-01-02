@@ -1,4 +1,8 @@
+![](https://github.com/senselogic/CODING_STANDARD/blob/master/LOGO/coding_standard.png)
+
 # Coding Standard
+
+Common programming rules.
 
 ## Goals
 
