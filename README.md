@@ -1,4 +1,4 @@
-![](https://github.com/senselogic/KODA/blob/master/LOGO/coding_standard.png)
+![](https://github.com/senselogic/KODA/blob/master/LOGO/koda.png)
 
 # Koda
 
