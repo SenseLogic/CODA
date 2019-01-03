@@ -1,8 +1,8 @@
-![](https://github.com/senselogic/CODING_STANDARD/blob/master/LOGO/coding_standard.png)
+![](https://github.com/senselogic/KODA/blob/master/LOGO/coding_standard.png)
 
-# Coding Standard
+# Koda
 
-Common programming rules.
+Language-agnostic coding standard.
 
 ## Goals
 
@@ -527,4 +527,4 @@ Eric Pelzer (ecstatic.coder@gmail.com).
 
 ## License
 
-This document is licensed under the Creative Commons Attribution-NonCommercial 4.0 International.
+Koda is licensed under the Creative Commons Attribution-NonCommercial 4.0 International.
