@@ -490,12 +490,6 @@ This coding standard favors readability over compactness, by :
 
 ## Guidelines
 
-*   Whenever possible :
-
-    *   Use only public attributes and methods.
-    *   Use virtual methods only where needed.
-    *   Avoid delegates.
-
 *   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
@@ -516,6 +510,13 @@ This coding standard favors readability over compactness, by :
 *   Make the application resilient to external conditions (network failures, missing or corrupted files, etc).
 
 *   Check invalid method parameters with assertions only in the debug build.
+
+*   Preferably use :
+
+    *   public attributes without getters and setters.
+    *   public non-virtual methods.
+    *   virtual methods instead of delegates.
+    *   state classes instead of coroutines.
 
 ## Version
 
