@@ -528,4 +528,6 @@ Eric Pelzer (ecstatic.coder@gmail.com).
 
 ## License
 
-Koda is licensed under the Creative Commons Attribution-NonCommercial 4.0 International.
+This project is licensed under the GNU Lesser General Public License version 3.
+
+See the [LICENSE.md](LICENSE.md) file for details.
