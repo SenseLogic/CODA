@@ -505,7 +505,7 @@ This coding standard favors readability over compactness, by :
 *   Instead of adding comments to explain the code intent, refactor the code to make it easy to understand by :
     *   choosing better method and parameter names;
     *   using local variables to store intermediate results;
-    *   splitting putting the code of a lengthy method into smaller methods called in sequence.
+    *   splitting the code of a lengthy method into smaller methods called in sequence.
 
 *   Make the application resilient to external conditions (network failures, missing or corrupted files, etc).
 
