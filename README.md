@@ -10,7 +10,7 @@ Efficiently develop code and applications with the following qualities :
 
 *   **Robust** : runs without crash and protects the data from being lost or corrupted.
 *   **Secure** : protects the data from being stolen or hacked.
-*   **Ergonomic** : does exactly what the user needs and can be used in an productive and intuitive manner.
+*   **Ergonomic** : does exactly what the user needs and can be used in a productive and intuitive manner.
 *   **Efficient** : minimizes processing times to maximize the user productivity.
 *   **Maintainable** : is easy to fix and enhance by any programmer in the team.
 *   **Extensible** : is easy to extend with new features by reusing existing components.
