@@ -184,7 +184,7 @@ This coding standard favors readability over compactness, by :
     CLASS
         class_;
 
-    class_ = new CLASS;
+    class_ = new CLASS();
     ```
 
 * Use a noun or noun phrase for classes, constants, attributes and variable names.
@@ -293,7 +293,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-* Declare each attribute, variable and method parameter name on separate line.
+* Declare each attribute, variable and method parameter name on a separate line.
 
     ```cs
     int
@@ -352,7 +352,7 @@ This coding standard favors readability over compactness, by :
     *   after `(` `[` `,`
     *   before `)` `]`
     *   after `if` `while` `for` `foreach` `return` ...
-    *   around operators
+    *   around operators.
 
 * Add exactly one empty line :
 
@@ -386,7 +386,7 @@ This coding standard favors readability over compactness, by :
     TANK_SHELL.cs
     ```
 
-* Group the class elements by category, declared in the same predefined order :
+* Group the class elements by category, and declare them in this order :
 
     *   Imports.
     *   Types.
@@ -396,7 +396,7 @@ This coding standard favors readability over compactness, by :
     *   Destructor.
     *   Operators.
     *   Inquiries : methods which don't change the class attributes.
-    *   Operations : methods which change the class attributes.
+    *   Operations : methods which may change the class attributes.
 
 * Within a category, declare :
     *    the called methods before the calling methods, preferably in the order they will be called, so that the class code can be immediately understood by a single sequential read.
