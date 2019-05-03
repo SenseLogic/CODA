@@ -1,6 +1,6 @@
-![](LOGO/koda.png)
+![](LOGO/coda.png)
 
-# Koda
+# Coda
 
 Language-agnostic coding standard.
 

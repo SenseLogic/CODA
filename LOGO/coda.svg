@@ -13,13 +13,13 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   viewBox="0 0 3417.1412 4115.4059"
+   viewBox="0 0 3452.1187 4115.4059"
    xml:space="preserve"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="koda.svg"
-   width="3417.1414"
+   sodipodi:docname="coda.svg"
+   width="3452.1189"
    height="4115.4062"
-   inkscape:export-filename="/home/eric/data/WORK/PROJECT/UNITY/KODA/LOGO/koda.png"
+   inkscape:export-filename="/home/eric/data/WORK/PROJECT/UNITY/CODA/LOGO/coda.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"><metadata
      id="metadata67"><rdf:RDF><cc:Work
@@ -34,16 +34,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2318"
-     inkscape:window-height="1741"
+     inkscape:window-width="3840"
+     inkscape:window-height="2136"
      id="namedview63"
      showgrid="false"
      inkscape:zoom="0.11523438"
      inkscape:cx="1276.3366"
-     inkscape:cy="934.55631"
-     inkscape:window-x="1516"
-     inkscape:window-y="232"
-     inkscape:window-maximized="0"
+     inkscape:cy="934.5563"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer3"
      fit-margin-top="200"
      fit-margin-left="200"
@@ -106,8 +106,8 @@
      x="9.9874897"
      y="3997.8208"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1307.03564453px;line-height:1.25;font-family:Bitsumishi;-inkscape-font-specification:Bitsumishi;fill:#ff662f;fill-opacity:1"
-     id="tspan4867"
-     dx="0 -10.07">KODA</tspan></text>
+     id="tspan4867">CODA</tspan></text>
+
 
 
 
@@ -116,7 +116,7 @@
 
 <g
    id="g4621"
-   transform="matrix(0.93720608,-0.01048537,0.01048537,0.93720608,147.52537,466.23204)"
+   transform="matrix(0.93720608,-0.01048537,0.01048537,0.93720608,165.01404,466.23204)"
    style="fill:#2fa4ff;fill-opacity:1"><circle
      r="635.06671"
      cy="1604.3541"
