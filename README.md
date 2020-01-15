@@ -192,7 +192,7 @@ This coding standard favors readability over compactness, by :
 * Include the meaningful part of the class name in attribute and variable names.
 
     ```cs
-    Dictionary<PLAYER, string>
+    Dictionary<string, PLAYER>
         ActivePlayerDictionary;
     List<ENEMY>
         CloseEnemyList;
