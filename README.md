@@ -494,7 +494,7 @@ This coding standard favors readability over compactness, by :
 
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
-    *   a short text or test code explaining how to use the application components, to optimize their external interface before implementing it.
+    *   a short text or test code demonstrating how to use the application components, to optimize their external interface before implementing it.
 
 *   Develop programs gradually, one feature at a time, using simple and efficient code.
 
@@ -517,6 +517,10 @@ This coding standard favors readability over compactness, by :
     *   public non-virtual methods.
     *   virtual methods instead of delegates.
     *   state classes instead of coroutines.
+
+*   Create automated unit tests.
+
+*   Test your changes extensively before pushing them under source control.
 
 ## Version
 
