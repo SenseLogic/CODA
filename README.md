@@ -490,7 +490,7 @@ This coding standard favors readability over compactness, by :
 
 ## Guidelines
 
-*   Design before you program, to avoid loosing precious time in developing the wrong solution to the wrong problem, by quickly writing :
+*   Design before you program, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
