@@ -22,7 +22,7 @@ This coding standard favors readability over compactness, by :
 
 *   Forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
 *   Using different letter cases for classes, class members and local variables;
-*   Including the class name in the attribute and variable names.
+*   Including the class name in attribute and variable names.
 
 ## Rules
 
