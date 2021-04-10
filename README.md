@@ -754,7 +754,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   The component classes are prefixed by the component name
+*   Component classes are prefixed by the component name.
 
     ```php
     <style file="header_menu.styl">
