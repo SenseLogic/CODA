@@ -524,19 +524,6 @@ This coding standard favors readability over compactness, by :
 
 ## CSS rules
 
-*   Reset at least the box-sizing, margin and padding attributes
-
-    ```css
-    *,
-    *::before,
-    *::after
-    {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    ```
-
 *   Declare styles in this order :
     *   Imports
     *   Constants
@@ -551,6 +538,7 @@ This coding standard favors readability over compactness, by :
         *   :first-child
         *   :nth-child
         *   :last-child
+        *   ::placeholder
         *   :focus
         *   :active
         *   :hover
@@ -616,6 +604,11 @@ This coding standard favors readability over compactness, by :
         *   transform
     *   Size
         *   box-sizing
+        *   margin
+        *   margin-top
+        *   margin-bottom
+        *   margin-left
+        *   margin-right
         *   height
         *   min-height
         *   max-height
@@ -640,11 +633,6 @@ This coding standard favors readability over compactness, by :
         *   border-bottom-left-radius
         *   border-bottom-right-radius
         *   border-collapse
-        *   margin
-        *   margin-top
-        *   margin-bottom
-        *   margin-left
-        *   margin-right
         *   padding
         *   padding-top
         *   padding-bottom
