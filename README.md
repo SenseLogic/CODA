@@ -609,13 +609,13 @@ This coding standard favors readability over compactness, by :
         *   margin-bottom
         *   margin-left
         *   margin-right
+        *   outline
         *   height
         *   min-height
         *   max-height
         *   width
         *   min-width
         *   max-width
-        *   outline
         *   border
         *   border-top
         *   border-bottom
