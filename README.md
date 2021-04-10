@@ -714,6 +714,37 @@ This coding standard favors readability over compactness, by :
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
+    ```css
+    .header-menu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        padding: 1rem;
+
+        background-color: transparent;
+
+        transition: background-color 0.3s ease;
+
+        +Media( above-40em )
+        {
+            padding: 2rem;
+        }
+
+        +Media( above-60em )
+        {
+            padding: 3rem;
+        }
+    }
+    ```
+
 ## Phoenix rules
 
 *   Declare components in this order :
@@ -722,6 +753,31 @@ This coding standard favors readability over compactness, by :
     *   HTML template
     *   external script
     *   embedded script
+
+*   The component classes are prefixed by the component name
+
+    ```php
+    <style file="header_menu.styl">
+        ...
+    </style>
+    <div id="header-menu" class="header-menu">
+        <div class="header-menu-button-container"
+            <div class="header-menu-button">
+                ...
+            </div>
+            ...
+        </div>
+        <div class="header-menu-mobile-button-container">
+            <div class="header-menu-mobile-button">
+                ...
+            </div>
+            ...
+        </div>
+    </div>
+    <script file="header_menu.js">
+        ...
+    </script>
+    ```
 
 ## Guidelines
 
