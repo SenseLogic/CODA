@@ -524,7 +524,7 @@ This coding standard favors readability over compactness, by :
 
 ## CSS rules
 
-*   Reset at least the margin, padding, and box-sizing attributes
+*   Reset at least the box-sizing, margin and padding attributes
 
     ```css
     *,
@@ -532,8 +532,8 @@ This coding standard favors readability over compactness, by :
     *::after
     {
         box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     ```
 
@@ -543,6 +543,7 @@ This coding standard favors readability over compactness, by :
     *   Variables
     *   Functions
     *   Mixins
+    *   Fonts
     *   Elements (of increasing specificity)
     *   Classes (of increasing specificity)
         *   @keyframe
@@ -588,6 +589,9 @@ This coding standard favors readability over compactness, by :
         *   grid-template-columns
         *   grid-auto-rows
         *   grid-gap
+        *   gap
+        *   row-gap
+        *   column-gap
         *   grid-area
         *   grid-row
         *   grid-column
@@ -598,8 +602,8 @@ This coding standard favors readability over compactness, by :
         *   align-items
         *   align-self
         *   order
-        *   clear
         *   float
+        *   clear
         *   shape-outside
         *   clip-path
     *   Position
@@ -620,11 +624,14 @@ This coding standard favors readability over compactness, by :
         *   max-width
         *   outline
         *   border
-        *   border-radius
         *   border-top
         *   border-bottom
         *   border-left
         *   border-right
+        *   border-width
+        *   border-style
+        *   border-color
+        *   border-image
         *   border-radius
         *   border-top-radius
         *   border-top-left-radius
@@ -632,6 +639,7 @@ This coding standard favors readability over compactness, by :
         *   border-bottom-radius
         *   border-bottom-left-radius
         *   border-bottom-right-radius
+        *   border-collapse
         *   margin
         *   margin-top
         *   margin-bottom
@@ -645,6 +653,7 @@ This coding standard favors readability over compactness, by :
         *   overflow
         *   overflow-y
         *   overflow-x
+        *   resize
     *   Content
         *   visibility
         *   opacity
@@ -669,10 +678,16 @@ This coding standard favors readability over compactness, by :
         *   font-style
         *   font-stretch
         *   font-variant
+        *   white-space
+        *   overflow-wrap
+        *   word-wrap
+        *   word-break
         *   word-spacing
         *   letter-spacing
+        *   caption-side
         *   vertical-align
         *   text-align
+        *   text-decoration
         *   text-transform
         *   text-shadow
         *   color
