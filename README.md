@@ -699,6 +699,15 @@ This coding standard favors readability over compactness, by :
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
+## Phoenix rules
+
+*   Declare components in this order :
+    *   external style
+    *   embedded style
+    *   HTML template
+    *   external script
+    *   embedded script
+
 ## Guidelines
 
 *   Design before you program, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
