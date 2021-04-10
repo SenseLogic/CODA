@@ -570,7 +570,7 @@ This coding standard favors readability over compactness, by :
         *   :before
         *   :after
 
-*   Split properties by category, and declare them in this order :
+*   Group properties by category, and declare them in this order :
     *   Inheritance
         *   @extend
     *   Content
@@ -614,7 +614,7 @@ This coding standard favors readability over compactness, by :
         *   left
         *   right
         *   transform
-    *   Frame
+    *   Size
         *   box-sizing
         *   height
         *   min-height
@@ -762,13 +762,15 @@ This coding standard favors readability over compactness, by :
     </style>
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
-            <div class="header-menu-button">
-                ...
+            <div class="header-menu-button" data-route="home" onclick="ShowView( this )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
             </div>
             ...
         </div>
         <div class="header-menu-mobile-button-container">
-            <div class="header-menu-mobile-button">
+            <div class="header-menu-mobile-button data-route="home" onclick="CloseHeaderMenu(); ShowView( this )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
+            </div>
                 ...
             </div>
             ...
