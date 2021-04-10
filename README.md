@@ -771,8 +771,6 @@ This coding standard favors readability over compactness, by :
             <div class="header-menu-mobile-button" data-route="home" onclick="CloseHeaderMenu(); ShowView( this )">
                 <# .GetText( 'HeaderMenuHomeButton' ) #>
             </div>
-                ...
-            </div>
             ...
         </div>
     </div>
