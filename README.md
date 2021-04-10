@@ -570,6 +570,8 @@ This coding standard favors readability over compactness, by :
         *   :after
 
 *   Split properties by category, and declare them in this order :
+    *   Inheritance
+        *   @extend
     *   Content
         *   content
     *   Layout
