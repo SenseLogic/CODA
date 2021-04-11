@@ -597,10 +597,10 @@ This coding standard favors readability over compactness, by :
         *   :before
         *   :after
 
-*   Group properties by category, and declare them in this order :
+*   Declare properties in this order :
     *   Inheritance
         *   @extend
-    *   Content
+    *   Generated content
         *   content
     *   Layout
         *   display
@@ -641,7 +641,7 @@ This coding standard favors readability over compactness, by :
         *   left
         *   right
         *   transform
-    *   Size
+    *   Container
         *   box-sizing
         *   margin
         *   margin-top
@@ -740,6 +740,8 @@ This coding standard favors readability over compactness, by :
         *   animation-fill-mode
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
+
+*   Group properties by category.
 
     ```css
     .header-menu
