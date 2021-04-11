@@ -517,6 +517,40 @@ This coding standard favors readability over compactness, by :
     ...
     ```
 
+## Phoenix rules
+
+*   Declare components in this order :
+    *   external style
+    *   embedded style
+    *   HTML template
+    *   external script
+    *   embedded script
+
+*   Component classes are prefixed by the component name.
+
+    ```php
+    <style file="header_menu.styl">
+        ...
+    </style>
+    <div id="header-menu" class="header-menu">
+        <div class="header-menu-button-container"
+            <div class="header-menu-button" data-route="home" onclick="ShowView( this )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
+            </div>
+            ...
+        </div>
+        <div class="header-menu-mobile-button-container">
+            <div class="header-menu-mobile-button" data-route="home" onclick="CloseHeaderMenu(); ShowView( this )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
+            </div>
+            ...
+        </div>
+    </div>
+    <script file="header_menu.js">
+        ...
+    </script>
+    ```
+
 ## HTML rules
 
 *   Declare attributes in this order :
@@ -736,40 +770,6 @@ This coding standard favors readability over compactness, by :
             padding: 3rem;
         }
     }
-    ```
-
-## Phoenix rules
-
-*   Declare components in this order :
-    *   external style
-    *   embedded style
-    *   HTML template
-    *   external script
-    *   embedded script
-
-*   Component classes are prefixed by the component name.
-
-    ```php
-    <style file="header_menu.styl">
-        ...
-    </style>
-    <div id="header-menu" class="header-menu">
-        <div class="header-menu-button-container"
-            <div class="header-menu-button" data-route="home" onclick="ShowView( this )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
-            </div>
-            ...
-        </div>
-        <div class="header-menu-mobile-button-container">
-            <div class="header-menu-mobile-button" data-route="home" onclick="CloseHeaderMenu(); ShowView( this )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
-            </div>
-            ...
-        </div>
-    </div>
-    <script file="header_menu.js">
-        ...
-    </script>
     ```
 
 ## Guidelines
