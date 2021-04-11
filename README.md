@@ -498,7 +498,11 @@ This coding standard favors readability over compactness, by :
     DoSomethingWeird();    // a short explanation
     ```
 
-*   Begin C++ header files with `#pragma once`.
+*   Name the unit test class by simply adding a `_TEST` suffix to the class name.
+
+## C++ rules
+
+*   Begin header files with `#pragma once`.
 
     ```cs
     #pragma once
@@ -507,10 +511,11 @@ This coding standard favors readability over compactness, by :
 
     #include "tank.hpp"
     #include "tank_shell.hpp"
+
+    // -- TYPES
+
     ...
     ```
-
-*   Name the unit test class by simply adding a `_TEST` suffix to the class name.
 
 ## HTML rules
 
