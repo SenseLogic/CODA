@@ -534,13 +534,13 @@ This coding standard favors readability over compactness, by :
     </style>
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
-            <div class="header-menu-button" data-route="home" onclick="ShowView( this )">
+            <div class="header-menu-button" onclick="SetView( 'home' )">
                 <# .GetText( 'HeaderMenuHomeButton' ) #>
             </div>
             ...
         </div>
         <div class="header-menu-mobile-button-container">
-            <div class="header-menu-mobile-button" data-route="home" onclick="CloseHeaderMenu(); ShowView( this )">
+            <div class="header-menu-mobile-button" onclick="CloseHeaderMenu(); SetView( 'home' )">
                 <# .GetText( 'HeaderMenuHomeButton' ) #>
             </div>
             ...
