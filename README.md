@@ -579,6 +579,7 @@ This coding standard favors readability over compactness, by :
     *   Classes (of increasing specificity, then interiority then appearance order)
         *   @keyframe class
         *   class
+        *   class media queries
         *   class:first-child
         *   class:nth-child
         *   class:last-child
@@ -588,7 +589,6 @@ This coding standard favors readability over compactness, by :
         *   class:hover
         *   class:before
         *   class:after
-        *   class media queries
         *   class#id
         *   class.other-class
         *   class + other-class
