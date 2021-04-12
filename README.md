@@ -579,7 +579,6 @@ This coding standard favors readability over compactness, by :
     *   Classes (of increasing specificity, then interiority then appearance order)
         *   @keyframe class
         *   class
-        *   class media queries
         *   class:first-child
         *   class:nth-child
         *   class:last-child
@@ -594,6 +593,25 @@ This coding standard favors readability over compactness, by :
         *   class + other-class
         *   class > other-class
         *   class other-class
+
+*   Declare media queries inside the class definition.
+
+        ```css
+        .class
+        {
+            ...
+
+            +Media( above-40em )
+            {
+                ...
+            }
+
+            +Media( above-60em )
+            {
+                ...
+            }
+        }
+        ```
 
 *   Declare selectors in this order :
         *   #id
