@@ -596,22 +596,22 @@ This coding standard favors readability over compactness, by :
 
 *   Declare media queries inside the class definition.
 
-        ```css
-        .class
+    ```css
+    .class
+    {
+        ...
+
+        +Media( above-40em )
         {
             ...
-
-            +Media( above-40em )
-            {
-                ...
-            }
-
-            +Media( above-60em )
-            {
-                ...
-            }
         }
-        ```
+
+        +Media( above-60em )
+        {
+            ...
+        }
+    }
+    ```
 
 *   Declare selectors in this order :
         *   #id
