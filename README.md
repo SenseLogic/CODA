@@ -576,19 +576,24 @@ This coding standard favors readability over compactness, by :
     *   Mixins
     *   Fonts
     *   Elements (of increasing specificity)
-    *   Classes (of increasing specificity)
-        *   @keyframe
-        *   default
-        *   :first-child
-        *   :nth-child
-        *   :last-child
-        *   ::placeholder
-        *   :focus
-        *   :active
-        *   :hover
-        *   :before
-        *   :after
-        *   media queries
+    *   Classes (of increasing specificity, then interiority then appearance order)
+        *   class @keyframe
+        *   class
+        *   class:first-child
+        *   class:nth-child
+        *   class:last-child
+        *   class::placeholder
+        *   class:focus
+        *   class:active
+        *   class:hover
+        *   class:before
+        *   class:after
+        *   class#id
+        *   class.other-class
+        *   class media queries
+        *   class + other-class
+        *   class > other-class
+        *   class other-class
 
 *   Declare selectors in this order :
         *   #id
