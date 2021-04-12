@@ -577,7 +577,7 @@ This coding standard favors readability over compactness, by :
     *   Fonts
     *   Elements (of increasing specificity)
     *   Classes (of increasing specificity, then interiority then appearance order)
-        *   class @keyframe
+        *   @keyframe class
         *   class
         *   class:first-child
         *   class:nth-child
