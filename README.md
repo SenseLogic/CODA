@@ -535,6 +535,22 @@ This coding standard favors readability over compactness, by :
             ...
         }
 
+        .header-menu-button-container
+        {
+            ...
+        }
+
+        .header-menu-button
+        {
+            ...
+        }
+
+        .header-menu-button:hover,
+        .header-menu-button.is-selected
+        {
+            ...
+        }
+
         ...
     </style>
     <div id="header-menu" class="header-menu">
