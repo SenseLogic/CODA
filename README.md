@@ -568,6 +568,8 @@ This coding standard favors readability over compactness, by :
 
 ## CSS rules
 
+*   Name your **ids** and **classes** in **kebab-case**, without articles.
+
 *   Declare styles in this order :
     *   Imports
     *   Constants
@@ -577,22 +579,22 @@ This coding standard favors readability over compactness, by :
     *   Fonts
     *   Elements (of increasing specificity)
     *   Classes (of increasing specificity, then interiority then appearance order)
-        *   @keyframe class
-        *   class
-        *   class:first-child
-        *   class:nth-child
-        *   class:last-child
-        *   class::placeholder
-        *   class:focus
-        *   class:active
-        *   class:hover
-        *   class:before
-        *   class:after
-        *   class#id
-        *   class.other-class
-        *   class + other-class
-        *   class > other-class
-        *   class other-class
+        *   @keyframe class-animation
+        *   .class
+        *   .class:first-child
+        *   .class:nth-child
+        *   .class:last-child
+        *   .class::placeholder
+        *   .class:focus
+        *   .class:active
+        *   .class:hover
+        *   .class:before
+        *   .class:after
+        *   .class#id
+        *   .class.other-class
+        *   .class + .other-class
+        *   .class > .other-class
+        *   .class .other-class
 
 *   Declare media queries inside the class definition.
 
