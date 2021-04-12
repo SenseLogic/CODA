@@ -616,16 +616,16 @@ This coding standard favors readability over compactness, by :
     ```
 
 *   Declare selectors in this order :
-        *   #id
-        *   .class
-        *   :first-child
-        *   :nth-child
-        *   :last-child
-        *   :focus
-        *   :active
-        *   :hover
-        *   :before
-        *   :after
+    *   #id
+    *   .class
+    *   :first-child
+    *   :nth-child
+    *   :last-child
+    *   :focus
+    *   :active
+    *   :hover
+    *   :before
+    *   :after
 
 *   Declare properties in this order :
     *   Inheritance
