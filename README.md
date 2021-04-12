@@ -588,9 +588,9 @@ This coding standard favors readability over compactness, by :
         *   class:hover
         *   class:before
         *   class:after
+        *   class media queries
         *   class#id
         *   class.other-class
-        *   class media queries
         *   class + other-class
         *   class > other-class
         *   class other-class
