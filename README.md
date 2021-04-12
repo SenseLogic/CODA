@@ -621,6 +621,7 @@ This coding standard favors readability over compactness, by :
     *   :first-child
     *   :nth-child
     *   :last-child
+    *   ::placeholder
     *   :focus
     *   :active
     *   :hover
