@@ -530,6 +530,11 @@ This coding standard favors readability over compactness, by :
 
     ```php
     <style file="header_menu.styl">
+        .header-menu
+        {
+            ...
+        }
+
         ...
     </style>
     <div id="header-menu" class="header-menu">
