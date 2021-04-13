@@ -520,6 +520,12 @@ This coding standard favors readability over compactness, by :
 
 ## Phoenix rules
 
+*   Use the component name in lowercase as file name.
+
+    ```php
+    header_menu.pht
+    ```
+
 *   Declare component **sections** in this order :
 
     *   external style
@@ -528,7 +534,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   Prefix component **classes** by its name in **kebab-case**.
+*   Prefix all component **classes** by its name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
