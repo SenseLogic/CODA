@@ -600,7 +600,7 @@ This coding standard favors readability over compactness, by :
     *   Elements
     *   Classes
 
-*   Delimitate **rule groups** with standard comments.
+*   Delimitate the rule sections with standard comments.
 
     ```cs
     // -- IMPORTS
@@ -636,7 +636,9 @@ This coding standard favors readability over compactness, by :
     ...
     ```
 
-*   Group **rules** of a same category by base class :
+*   Order **rules** by increasing interiority, appearance order, and specificity.
+
+*   For a same base selector class, declare rules in this order :
 
     *   @keyframe class-animation
     *   .class
@@ -656,8 +658,6 @@ This coding standard favors readability over compactness, by :
     *   .class .other-class
     *   .class#id
     *   .class.other-class
-
-*   Order **selectors** by increasing interiority, appearance order, and specificity.
 
 *   Declare selector **specifiers** in this order :
 
