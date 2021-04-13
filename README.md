@@ -665,7 +665,7 @@ This coding standard favors readability over compactness, by :
     *   .class#id
     *   .class.other-class
 
-*   Declare selector **specifiers** in this order :
+*   Declare concatenated **specifiers** in this order :
 
     *   element
     *   #id
