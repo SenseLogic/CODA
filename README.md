@@ -600,18 +600,19 @@ This coding standard favors readability over compactness, by :
         *   .class:first-child
         *   .class:nth-child
         *   .class:last-child
-        *   .class::placeholder
+        *   .class:hover
         *   .class:focus
         *   .class:active
-        *   .class:hover
+        *   .class:invalid
+        *   .class::placeholder
         *   .class:before
         *   .class:after
-        *   .class#id
-        *   .class.other-class
         *   .class ~ .other-class
         *   .class + .other-class
         *   .class > .other-class
         *   .class .other-class
+        *   .class#id
+        *   .class.other-class
 
 *   Declare media queries inside the class definition.
 
@@ -632,17 +633,18 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Declare combinators in this order :
+*   Declare specifiers in this order :
     *   element
     *   #id
     *   .class
     *   :first-child
     *   :nth-child
     *   :last-child
-    *   ::placeholder
+    *   :hover
     *   :focus
     *   :active
-    *   :hover
+    *   :invalid
+    *   ::placeholder
     *   :before
     *   :after
 
