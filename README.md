@@ -526,7 +526,7 @@ This coding standard favors readability over compactness, by :
     header_menu.pht
     ```
 
-*   Declare component **sections** in this order :
+*   Declare component sections in this order :
 
     *   external style
     *   embedded style
