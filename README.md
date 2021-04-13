@@ -887,7 +887,7 @@ This coding standard favors readability over compactness, by :
 
 ## Guidelines
 
-*   **Design** before you program, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
+*   **Design before you program**, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
@@ -907,7 +907,7 @@ This coding standard favors readability over compactness, by :
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
-*   Check invalid method parameters with **assertions** only in the debug build.
+*   Check invalid method parameters with **assertions** in the debug build.
 
 *   Preferably use :
 
