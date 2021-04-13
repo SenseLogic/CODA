@@ -589,7 +589,7 @@ This coding standard favors readability over compactness, by :
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
-*   Group **statements** by category, and declare them in this order :
+*   Group **rules** by category, and declare them in this order :
 
     *   Imports
     *   Constants
@@ -600,7 +600,7 @@ This coding standard favors readability over compactness, by :
     *   Elements
     *   Classes
 
-*   Delimitate those groups with standard comments.
+*   Delimitate **rule groups** with standard comments.
 
     ```cs
     // -- IMPORTS
@@ -636,7 +636,7 @@ This coding standard favors readability over compactness, by :
     ...
     ```
 
-*   Group **rules** by base class, and declare them in this order :
+*   Group **rules** of a same category by base class :
 
     *   @keyframe class-animation
     *   .class
