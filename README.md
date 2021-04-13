@@ -520,7 +520,7 @@ This coding standard favors readability over compactness, by :
 
 ## Phoenix rules
 
-*   Declare component sections in this order :
+*   Declare component **sections** in this order :
 
     *   external style
     *   embedded style
@@ -528,7 +528,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   Prefix component classes by its name in **kebab-case**.
+*   Prefix component **classes** by its name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
@@ -576,7 +576,7 @@ This coding standard favors readability over compactness, by :
 
 ## HTML rules
 
-*   Declare attributes in this order :
+*   Declare **attributes** in this order :
 
     *   id
     *   class (ordered by increasing specificity)
@@ -589,7 +589,7 @@ This coding standard favors readability over compactness, by :
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
-*   Group rules by category, and declare them in this order :
+*   Group **statements** by category, and declare them in this order :
 
     *   Imports
     *   Constants
@@ -600,7 +600,7 @@ This coding standard favors readability over compactness, by :
     *   Elements
     *   Classes
 
-*   Delimitate the rule groups with standard comments.
+*   Delimitate those groups with standard comments.
 
     ```cs
     // -- IMPORTS
@@ -636,7 +636,7 @@ This coding standard favors readability over compactness, by :
     ...
     ```
 
-*   Within a category, group rules by their first selector, and declare them in this order :
+*   Group **rules** by base class, and declare them in this order :
 
     *   @keyframe class-animation
     *   .class
@@ -657,9 +657,9 @@ This coding standard favors readability over compactness, by :
     *   .class#id
     *   .class.other-class
 
-*   Order selectors by increasing interiority, appearance order, and specificity.
+*   Order **selectors** by increasing interiority, appearance order, and specificity.
 
-*   Declare selector specifiers in this order :
+*   Declare selector **specifiers** in this order :
 
     *   element
     *   #id
@@ -675,7 +675,7 @@ This coding standard favors readability over compactness, by :
     *   :before
     *   :after
 
-*   Declare media queries inside the rule, right after the declarations, and order them by increasing breakpoint.
+*   Declare **media queries** inside the rule, right after the declarations, and order them by increasing breakpoint.
 
     ```css
     .class
@@ -694,7 +694,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Group properties by category, and space them using a single empty line :
+*   Group **declarations** by category, and space them using a single empty line :
 
     *   Inheritance
     *   Position
@@ -735,7 +735,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Declare properties in this order :
+*   Declare **declarations** in this order :
 
     *   Inheritance
         *   @extend
