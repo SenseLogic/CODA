@@ -399,6 +399,7 @@ This coding standard favors readability over compactness, by :
     *   Operations : methods which may change the class attributes.
 
 *   Within a category, declare :
+
     *    the called methods before the calling methods, preferably in the order they will be called, so that the class code can be immediately understood by a single sequential read.
     *    the static members after the non-static members.
 
@@ -519,14 +520,15 @@ This coding standard favors readability over compactness, by :
 
 ## Phoenix rules
 
-*   Declare components in this order :
+*   Declare the component sections in this order :
+
     *   external style
     *   embedded style
     *   HTML template
     *   external script
     *   embedded script
 
-*   Component classes are prefixed by the component name.
+*   Prefix all component classes by the component name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
@@ -575,8 +577,9 @@ This coding standard favors readability over compactness, by :
 ## HTML rules
 
 *   Declare attributes in this order :
+
     *   id
-    *   class (of increasing specificity)
+    *   class (ordered by increasing specificity)
     *   style
     *   data-*
     *   tag-specific attributes
@@ -586,35 +589,93 @@ This coding standard favors readability over compactness, by :
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
-*   Declare styles in this order :
+*   Group rules by category, and declare them in this order :
+
     *   Imports
     *   Constants
     *   Variables
     *   Functions
     *   Mixins
     *   Fonts
-    *   Elements (of increasing specificity)
-    *   Classes (of interiority, appearance order, and specificity)
-        *   @keyframe class-animation
-        *   .class
-        *   .class:first-child
-        *   .class:nth-child
-        *   .class:last-child
-        *   .class:hover
-        *   .class:focus
-        *   .class:active
-        *   .class:invalid
-        *   .class::placeholder
-        *   .class:before
-        *   .class:after
-        *   .class ~ .other-class
-        *   .class + .other-class
-        *   .class > .other-class
-        *   .class .other-class
-        *   .class#id
-        *   .class.other-class
+    *   Elements
+    *   Classes
 
-*   Declare media queries inside the class definition.
+*   Delimitate the rule groups with standard comments.
+
+    ```cs
+    // -- IMPORTS
+
+    ...
+
+    // -- CONSTANTS
+
+    ...
+
+    // -- VARIABLES
+
+    ...
+
+    // -- FUNCTIONS
+
+    ...
+
+    // -- MIXINS
+
+    ...
+
+    // -- FONTS
+
+    ...
+
+    // -- ELEMENTS
+
+    ...
+
+    // -- CLASSES
+
+    ...
+    ```
+
+*   Within a category, group rules by their first selector, and declare them in this order :
+
+    *   @keyframe class-animation
+    *   .class
+    *   .class:first-child
+    *   .class:nth-child
+    *   .class:last-child
+    *   .class:hover
+    *   .class:focus
+    *   .class:active
+    *   .class:invalid
+    *   .class::placeholder
+    *   .class:before
+    *   .class:after
+    *   .class ~ .other-class
+    *   .class + .other-class
+    *   .class > .other-class
+    *   .class .other-class
+    *   .class#id
+    *   .class.other-class
+
+*   Order selectors by increasing interiority, appearance order, and specificity.
+
+*   Declare selector specifiers in this order :
+
+    *   element
+    *   #id
+    *   .class
+    *   :first-child
+    *   :nth-child
+    *   :last-child
+    *   :hover
+    *   :focus
+    *   :active
+    *   :invalid
+    *   ::placeholder
+    *   :before
+    *   :after
+
+*   Declare media queries inside the rule, right after the declarations, and order them by increasing breakpoint.
 
     ```css
     .class
@@ -633,22 +694,15 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Declare specifiers in this order :
-    *   element
-    *   #id
-    *   .class
-    *   :first-child
-    *   :nth-child
-    *   :last-child
-    *   :hover
-    *   :focus
-    *   :active
-    *   :invalid
-    *   ::placeholder
-    *   :before
-    *   :after
+*   Group properties by category, and space them using a single empty line :
 
-*   Group properties by category of increasing interiority.
+    *   Inheritance
+    *   Position
+    *   Container
+    *   Layout
+    *   Content
+    *   Typography
+    *   Behavior
 
     ```css
     .header-menu
@@ -682,6 +736,7 @@ This coding standard favors readability over compactness, by :
     ```
 
 *   Declare properties in this order :
+
     *   Inheritance
         *   @extend
     *   Position
@@ -839,6 +894,7 @@ This coding standard favors readability over compactness, by :
 *   Immediately refactor components when their modularity or reusability needs to be improved.
 
 *   Instead of adding comments to explain the code intent, refactor the code to make it easy to understand by :
+
     *   choosing better method and parameter names;
     *   using local variables to store intermediate results;
     *   splitting the code of a lengthy method into smaller methods called in sequence.
@@ -860,7 +916,7 @@ This coding standard favors readability over compactness, by :
 
 ## Version
 
-1.0
+1.2
 
 ## Author
 
