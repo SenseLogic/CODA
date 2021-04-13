@@ -576,7 +576,7 @@ This coding standard favors readability over compactness, by :
 
 *   Declare attributes in this order :
     *   id
-    *   class (ordered by increasing specificity)
+    *   class (of increasing specificity)
     *   style
     *   data-*
     *   tag-specific attributes
@@ -594,7 +594,7 @@ This coding standard favors readability over compactness, by :
     *   Mixins
     *   Fonts
     *   Elements (of increasing specificity)
-    *   Classes (of increasing specificity, then interiority then appearance order)
+    *   Classes (of interiority, appearance order, and specificity)
         *   @keyframe class-animation
         *   .class
         *   .class:first-child
@@ -608,6 +608,7 @@ This coding standard favors readability over compactness, by :
         *   .class:after
         *   .class#id
         *   .class.other-class
+        *   .class ~ .other-class
         *   .class + .other-class
         *   .class > .other-class
         *   .class .other-class
@@ -631,7 +632,8 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Declare selectors in this order :
+*   Declare combinators in this order :
+    *   element
     *   #id
     *   .class
     *   :first-child
@@ -644,42 +646,42 @@ This coding standard favors readability over compactness, by :
     *   :before
     *   :after
 
+*   Group properties by category of increasing interiority.
+
+    ```css
+    .header-menu
+    {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        padding: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: transparent;
+
+        transition: background-color 0.3s ease;
+
+        +Media( above-40em )
+        {
+            padding: 2rem;
+        }
+
+        +Media( above-60em )
+        {
+            padding: 3rem;
+        }
+    }
+    ```
+
 *   Declare properties in this order :
     *   Inheritance
         *   @extend
-    *   Generated content
-        *   content
-    *   Layout
-        *   display
-        *   flex
-        *   flex-direction
-        *   flex-wrap
-        *   flex-grow
-        *   flex-shrink
-        *   flex-basis
-        *   flex-flow
-        *   grid-template
-        *   grid-template-rows
-        *   grid-template-columns
-        *   grid-auto-rows
-        *   grid-gap
-        *   gap
-        *   row-gap
-        *   column-gap
-        *   grid-area
-        *   grid-row
-        *   grid-column
-        *   justity-content
-        *   justify-items
-        *   justify-self
-        *   align-content
-        *   align-items
-        *   align-self
-        *   order
-        *   float
-        *   clear
-        *   shape-outside
-        *   clip-path
     *   Position
         *   z-index
         *   position
@@ -728,7 +730,39 @@ This coding standard favors readability over compactness, by :
         *   overflow-y
         *   overflow-x
         *   resize
+    *   Layout
+        *   display
+        *   flex
+        *   flex-direction
+        *   flex-wrap
+        *   flex-grow
+        *   flex-shrink
+        *   flex-basis
+        *   flex-flow
+        *   grid-template
+        *   grid-template-rows
+        *   grid-template-columns
+        *   grid-auto-rows
+        *   grid-gap
+        *   gap
+        *   row-gap
+        *   column-gap
+        *   grid-area
+        *   grid-row
+        *   grid-column
+        *   justity-content
+        *   justify-items
+        *   justify-self
+        *   align-content
+        *   align-items
+        *   align-self
+        *   order
+        *   float
+        *   clear
+        *   shape-outside
+        *   clip-path
     *   Content
+        *   content
         *   visibility
         *   opacity
         *   object-fit
@@ -787,39 +821,6 @@ This coding standard favors readability over compactness, by :
         *   animation-fill-mode
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
-
-*   Group properties by category.
-
-    ```css
-    .header-menu
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        z-index: 100;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        padding: 1rem;
-
-        background-color: transparent;
-
-        transition: background-color 0.3s ease;
-
-        +Media( above-40em )
-        {
-            padding: 2rem;
-        }
-
-        +Media( above-60em )
-        {
-            padding: 3rem;
-        }
-    }
-    ```
 
 ## Guidelines
 
