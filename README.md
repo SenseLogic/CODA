@@ -741,7 +741,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Declare **declarations** in this order :
+*   Declare **properties** in this order :
 
     *   Inheritance
         *   @extend
