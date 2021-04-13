@@ -520,7 +520,7 @@ This coding standard favors readability over compactness, by :
 
 ## Phoenix rules
 
-*   Declare the component sections in this order :
+*   Declare component sections in this order :
 
     *   external style
     *   embedded style
@@ -528,7 +528,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   Prefix all component classes by the component name in **kebab-case**.
+*   Prefix component classes by the component name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
