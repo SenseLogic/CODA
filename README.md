@@ -528,7 +528,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   Prefix component classes by the component name in **kebab-case**.
+*   Prefix component classes by its name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
