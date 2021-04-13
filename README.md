@@ -887,27 +887,27 @@ This coding standard favors readability over compactness, by :
 
 ## Guidelines
 
-*   Design before you program, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
+*   **Design** before you program, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
     *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
     *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
     *   a short text or test code demonstrating how to use the application components, to optimize their external interface before implementing it.
 
-*   Develop programs gradually, one feature at a time, using simple and efficient code.
+*   Develop programs **gradually**, one feature at a time, using **simple** and **efficient** code.
 
-*   Don't overgineer your code, choose simple modular designs which can easily be extended.
+*   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
 
-*   Immediately refactor components when their modularity or reusability needs to be improved.
+*   Immediately **refactor components** when their modularity or reusability needs to be improved.
 
-*   Instead of adding comments to explain the code intent, refactor the code to make it easy to understand by :
+*   Instead of adding comments to explain the code intent, **refactor the code** to make it easy to understand by :
 
     *   choosing better method and parameter names;
     *   using local variables to store intermediate results;
     *   splitting the code of a lengthy method into smaller methods called in sequence.
 
-*   Make the application resilient to external conditions (network failures, missing or corrupted files, etc).
+*   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
-*   Check invalid method parameters with assertions only in the debug build.
+*   Check invalid method parameters with **assertions** only in the debug build.
 
 *   Preferably use :
 
@@ -916,9 +916,9 @@ This coding standard favors readability over compactness, by :
     *   virtual methods instead of delegates.
     *   state classes instead of coroutines.
 
-*   Create automated unit tests.
+*   Create automated **unit tests**.
 
-*   Test your changes extensively before pushing them under source control.
+*   **Test your changes** extensively before pushing them under source control.
 
 ## Version
 
