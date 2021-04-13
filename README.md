@@ -889,9 +889,9 @@ This coding standard favors readability over compactness, by :
 
 *   **Design before you program**, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
-    *   a short text or UI flow explaining how to use the application, to optimize the application interface before implementing it;
-    *   a short text explaining what the application components will do, to optimize the application architecture before implementing it;
-    *   a short text or test code demonstrating how to use the application components, to optimize their external interface before implementing it.
+    *   a short text or UI flow explaining how to use the application, to optimize the **application interface** before implementing it;
+    *   a short text explaining what the application components will do, to optimize the **application architecture** before implementing it;
+    *   a short text or test code demonstrating how to use the application components, to optimize the **component interface** before implementing it.
 
 *   Develop programs **gradually**, one feature at a time, using **simple** and **efficient** code.
 
