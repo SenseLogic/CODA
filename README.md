@@ -518,90 +518,9 @@ This coding standard favors readability over compactness, by :
     ...
     ```
 
-## Phoenix rules
-
-*   Use the component name in lowercase as file name.
-
-    ```php
-    header_menu.pht
-    ```
-
-*   Declare component sections in this order :
-
-    *   external style
-    *   embedded style
-    *   HTML template
-    *   external script
-    *   embedded script
-
-*   Prefix all **classes** by the component name in **kebab-case**.
-
-    ```php
-    <style file="header_menu.styl">
-        .header-menu
-        {
-            ...
-        }
-
-        .header-menu-button-container
-        {
-            ...
-        }
-
-        .header-menu-button
-        {
-            ...
-        }
-
-        .header-menu-button:hover,
-        .header-menu-button.is-selected
-        {
-            ...
-        }
-
-        ...
-    </style>
-    <div id="header-menu" class="header-menu">
-        <div class="header-menu-button-container"
-            <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
-            </div>
-            ...
-        </div>
-        <div class="header-menu-mobile-button-container">
-            <div class="header-menu-mobile-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
-            </div>
-            ...
-        </div>
-    </div>
-    <script file="header_menu.js">
-        ...
-    </script>
-    ```
-
-## HTML rules
-
-*   Use double quotes (except inside style attributes).
-
-*   Declare tag **attributes** in this order :
-
-    *   id
-    *   class (ordered by increasing specificity)
-    *   style
-    *   data-*
-    *   tag-specific attributes
-    *   on*
-    
-    ```html
-    <div id="header-menu-home-button" class="header-menu-button header-menu-home-button" style="background-image: url( '/static/image/header_menu/home_button.svg' )" data-view-name="home" onclick="ShowView( 'home' )">
-        ...
-    </div>
-    ```
-
 ## CSS rules
 
-*   Use double quotes.
+*   Use double quotes for string literals.
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
@@ -721,7 +640,7 @@ This coding standard favors readability over compactness, by :
     *   Content
     *   Typography
     *   Behavior
-    
+
 *   Delimitate declaration sections with a blank line.
 
     ```css
@@ -905,6 +824,87 @@ This coding standard favors readability over compactness, by :
         *   animation-fill-mode
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
+
+## HTML rules
+
+*   Use double quotes for string literals (except inside style attributes).
+
+*   Declare tag **attributes** in this order :
+
+    *   id
+    *   class (ordered by increasing specificity)
+    *   style
+    *   data-*
+    *   tag-specific attributes
+    *   on*
+
+    ```html
+    <div id="header-menu-home-button" class="header-menu-button header-menu-home-button" style="background-image: url( '/static/image/header_menu/home_button.svg' )" data-view-name="home" onclick="ShowView( 'home' )">
+        ...
+    </div>
+    ```
+
+## Phoenix rules
+
+*   Use the component name in lowercase as file name.
+
+    ```php
+    header_menu.pht
+    ```
+
+*   Declare component sections in this order :
+
+    *   external style
+    *   embedded style
+    *   HTML template
+    *   external script
+    *   embedded script
+
+*   Prefix all **classes** by the component name in **kebab-case**.
+
+    ```php
+    <style file="header_menu.styl">
+        .header-menu
+        {
+            ...
+        }
+
+        .header-menu-button-container
+        {
+            ...
+        }
+
+        .header-menu-button
+        {
+            ...
+        }
+
+        .header-menu-button:hover,
+        .header-menu-button.is-selected
+        {
+            ...
+        }
+
+        ...
+    </style>
+    <div id="header-menu" class="header-menu">
+        <div class="header-menu-button-container"
+            <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
+            </div>
+            ...
+        </div>
+        <div class="header-menu-mobile-button-container">
+            <div class="header-menu-mobile-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
+                <# .GetText( 'HeaderMenuHomeButton' ) #>
+            </div>
+            ...
+        </div>
+    </div>
+    <script file="header_menu.js">
+        ...
+    </script>
+    ```
 
 ## Guidelines
 
