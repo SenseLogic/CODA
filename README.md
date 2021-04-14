@@ -854,11 +854,11 @@ This coding standard favors readability over compactness, by :
 
 *   Declare component sections in this order :
 
-    *   external style
-    *   embedded style
+    *   shared style
+    *   inline style
     *   HTML template
-    *   external script
-    *   embedded script
+    *   shared script
+    *   inline script
 
 *   Prefix all **classes** by the component name in **kebab-case**.
 
@@ -887,6 +887,9 @@ This coding standard favors readability over compactness, by :
 
         ...
     </style>
+    <style>
+        ...
+    </style>
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
             <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
@@ -902,6 +905,9 @@ This coding standard favors readability over compactness, by :
         </div>
     </div>
     <script file="header_menu.js">
+        ...
+    </script>
+    <script>
         ...
     </script>
     ```
