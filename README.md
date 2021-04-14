@@ -415,7 +415,7 @@ This coding standard favors readability over compactness, by :
     *   functions
     *   statements
 
-*   Delimitate the code sections with standard comments.
+*   Delimitate code sections with standard comments.
 
     ```cs
     // -- IMPORTS
@@ -534,7 +534,7 @@ This coding standard favors readability over compactness, by :
     *   external script
     *   embedded script
 
-*   Prefix all component **classes** by its name in **kebab-case**.
+*   Prefix all **classes** by the component name in **kebab-case**.
 
     ```php
     <style file="header_menu.styl">
@@ -582,7 +582,7 @@ This coding standard favors readability over compactness, by :
 
 ## HTML rules
 
-*   Declare **attributes** in this order :
+*   Declare tag **attributes** in this order :
 
     *   id
     *   class (ordered by increasing specificity)
@@ -590,6 +590,12 @@ This coding standard favors readability over compactness, by :
     *   data-*
     *   tag-specific attributes
     *   on*
+    
+    ```html
+    <div id="header-menu-home-button" class="header-menu-button header-menu-home-button" style="background-image: url( '/static/image/header_menu/home_button.svg' )" data-view-name="home" onclick="ShowView( 'home' )">
+        ...
+    </div>
+    ```
 
 ## CSS rules
 
@@ -606,7 +612,7 @@ This coding standard favors readability over compactness, by :
     *   Elements
     *   Classes
 
-*   Delimitate the rule sections with standard comments.
+*   Delimitate rule sections with standard comments.
 
     ```cs
     // -- IMPORTS
@@ -648,8 +654,9 @@ This coding standard favors readability over compactness, by :
 
     *   @keyframe class-animation
     *   .class
+    *   .class:not()
     *   .class:first-child
-    *   .class:nth-child
+    *   .class:nth-child()
     *   .class:last-child
     *   .class:hover
     *   .class:focus
@@ -670,8 +677,9 @@ This coding standard favors readability over compactness, by :
     *   element
     *   #id
     *   .class
+    *   :not()
     *   :first-child
-    *   :nth-child
+    *   :nth-child()
     *   :last-child
     *   :hover
     *   :focus
@@ -700,7 +708,7 @@ This coding standard favors readability over compactness, by :
     }
     ```
 
-*   Group **declarations** by category, and space them using a single empty line :
+*   Group **declarations** by category :
 
     *   Inheritance
     *   Position
@@ -709,6 +717,8 @@ This coding standard favors readability over compactness, by :
     *   Content
     *   Typography
     *   Behavior
+    
+*   Delimitate declaration sections with a blank line.
 
     ```css
     .header-menu
@@ -858,7 +868,14 @@ This coding standard favors readability over compactness, by :
         *   caption-side
         *   vertical-align
         *   text-align
+        *   text-align-last
+        *   text-indent
+        *   text-justify
+        *   text-overflow
         *   text-decoration
+        *   text-decoration-line
+        *   text-decoration-style
+        *   text-decoration-color
         *   text-transform
         *   text-shadow
         *   color
