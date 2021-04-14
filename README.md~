@@ -582,8 +582,6 @@ This coding standard favors readability over compactness, by :
 
 ## HTML rules
 
-*   Use double quotes (except inside style attributes).
-
 *   Declare tag **attributes** in this order :
 
     *   id
@@ -600,8 +598,6 @@ This coding standard favors readability over compactness, by :
     ```
 
 ## CSS rules
-
-*   Use double quotes.
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
