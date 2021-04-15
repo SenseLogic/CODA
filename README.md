@@ -827,7 +827,9 @@ This coding standard favors readability over compactness, by :
 
 ## HTML rules
 
-*   Use double quotes for string literals (except inside style attributes).
+*   Use double quotes for string literals.
+
+*   Use single quotes inside double-quoted string literals.
 
 *   Declare tag **attributes** in this order :
 
@@ -835,11 +837,15 @@ This coding standard favors readability over compactness, by :
     *   class (ordered by increasing specificity)
     *   style
     *   data-*
-    *   tag-specific attributes
+    *   tag-specific attributes (src, href, etc)
     *   on*
 
     ```html
-    <div id="header-menu-home-button" class="header-menu-button header-menu-home-button" style="background-image: url( '/static/image/header_menu/home_button.svg' )" data-view-name="home" onclick="ShowView( 'home' )">
+    <div id="header-menu-home-button"
+         class="header-menu-button header-menu-home-button"
+         style="margin-left: auto; background-image: url( '/static/image/header_menu/home_button.svg' )"
+         data-view-name="home"
+         onclick="ShowView( 'home' )">
         ...
     </div>
     ```
