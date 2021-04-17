@@ -687,7 +687,11 @@ This coding standard favors readability over compactness, by :
         *   right
         *   transform
     *   Container
+        *   overflow
+        *   overflow-y
+        *   overflow-x
         *   box-sizing
+        *   scrollbar-width
         *   margin
         *   margin-top
         *   margin-bottom
@@ -722,10 +726,6 @@ This coding standard favors readability over compactness, by :
         *   padding-bottom
         *   padding-left
         *   padding-right
-        *   overflow
-        *   overflow-y
-        *   overflow-x
-        *   scrollbar-width
     *   Layout
         *   display
         *   flex
@@ -746,7 +746,7 @@ This coding standard favors readability over compactness, by :
         *   grid-area
         *   grid-row
         *   grid-column
-        *   justity-content
+        *   justify-content
         *   justify-items
         *   justify-self
         *   align-content
