@@ -725,7 +725,7 @@ This coding standard favors readability over compactness, by :
         *   overflow
         *   overflow-y
         *   overflow-x
-        *   resize
+        *   scrollbar-width
     *   Layout
         *   display
         *   flex
@@ -757,11 +757,11 @@ This coding standard favors readability over compactness, by :
         *   clear
         *   shape-outside
         *   clip-path
+        *   object-fit
     *   Content
         *   content
         *   visibility
         *   opacity
-        *   object-fit
         *   background
         *   background-clip
         *   background-color
@@ -803,6 +803,7 @@ This coding standard favors readability over compactness, by :
         *   text-shadow
         *   color
     *   Behavior
+        *   resize
         *   scroll-snap-type
         *   scroll-snap-points-y
         *   scroll-snap-points-x
