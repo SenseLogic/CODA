@@ -46,6 +46,10 @@ This coding standard favors readability over compactness, by :
 
 *   Use **four spaces** instead of tabulations, to make the code independent of the editor settings.
 
+*   Use **Unix line endings**.
+
+*   Trim **trailing whitespace** on save.
+
 *   Choose **short meaningful identifiers** for class, attribute, method, constant and variable names, to prevent ambiguity and cognitive load.
 
 *   Use **standard prefixes** :
