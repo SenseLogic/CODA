@@ -528,6 +528,12 @@ This coding standard favors readability over compactness, by :
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
+*   Favor :
+    *   **scalar** values for line heights.
+    *   **px** values only for small fixed sizes.
+    *   **rem** values for font sizes and higher fixed sizes.
+    *   **%** values for responsive sizes.
+
 *   Group **rules** by category, and declare them in this order :
 
     *   Imports
