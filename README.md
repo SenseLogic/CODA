@@ -528,11 +528,11 @@ This coding standard favors readability over compactness, by :
 
 *   Name your **ids** and **classes** in **kebab-case**, without articles.
 
-*   Favor :
-    *   **scalar** values for line heights.
-    *   **px** values only for small fixed sizes.
-    *   **rem** values for font sizes and higher fixed sizes.
-    *   **%** values for responsive sizes.
+*   Use :
+    *   **unitless** values for line heights.
+    *   **px** values only for tiny static sizes.
+    *   **rem** values for font sizes and other static sizes.
+    *   **%**, **vh**, **vw**, **vmin** and **vmax** values for dynamic sizes.
 
 *   Group **rules** by category, and declare them in this order :
 
@@ -595,9 +595,10 @@ This coding standard favors readability over compactness, by :
     *   .class:focus
     *   .class:active
     *   .class:invalid
-    *   .class::placeholder
     *   .class:before
     *   .class:after
+    *   .class:placeholder-shown
+    *   .class::placeholder
     *   .class ~ .other-class
     *   .class + .other-class
     *   .class > .other-class
@@ -618,9 +619,10 @@ This coding standard favors readability over compactness, by :
     *   :focus
     *   :active
     *   :invalid
-    *   ::placeholder
     *   :before
     *   :after
+    *   :placeholder-shown
+    *   ::placeholder
 
 *   Declare **media queries** inside the rule, right after the declarations, and order them by increasing breakpoint.
 
