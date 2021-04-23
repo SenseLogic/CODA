@@ -624,19 +624,39 @@ This coding standard favors readability over compactness, by :
     *   :placeholder-shown
     *   ::placeholder
 
-*   Declare **media queries** inside the rule, right after the declarations, and order them by increasing breakpoint.
+*   Declare **media queries** inside the rule using the "+Media" mixin, right after the declarations, and order them by increasing breakpoint.
 
     ```css
     .class
     {
         ...
 
-        +Media( above-40em )
+        +Media( min-width-40em )
         {
             ...
         }
 
-        +Media( above-60em )
+        +Media( min-width-60em )
+        {
+            ...
+        }
+
+        +Media( min-width-80em, max-height-40em )
+        {
+            ...
+        }
+        
+        +Media( "min-width-80em && max-height-40em" )
+        {
+            ...
+        }
+        
+        +Media( "min-width-80em && min-height-40em", "max-width-120em && min-height-60em" )
+        {
+            ...
+        }
+        
+        +Media( "min-width-80em && min-height-40em", "max-width-120em && min-height-60em" )
         {
             ...
         }
@@ -674,12 +694,12 @@ This coding standard favors readability over compactness, by :
 
         transition: background-color 0.3s ease;
 
-        +Media( above-40em )
+        +Media( min-width-40em )
         {
             padding: 2rem;
         }
 
-        +Media( above-60em )
+        +Media( min-width-60em )
         {
             padding: 3rem;
         }
