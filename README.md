@@ -18,11 +18,11 @@ Efficiently develop code and applications with the following qualities :
 
 ## Specificity
 
-This coding standard favors readability over compactness, by :
+This coding standard targets self-documenting code, and therefore favors readability over compactness by :
 
 *   Forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
-*   Using different letter cases for classes, class members and local variables;
-*   Including the class name in attribute and variable names.
+*   Using letter cases to distinguish classes, class members and local variables;
+*   Including the class name in attributes and variable names.
 
 ## General rules
 
@@ -645,17 +645,17 @@ This coding standard favors readability over compactness, by :
         {
             ...
         }
-        
+
         +Media( "min-width-80em && max-height-40em" )
         {
             ...
         }
-        
+
         +Media( "min-width-80em && min-height-40em", "max-width-120em && min-height-60em" )
         {
             ...
         }
-        
+
         +Media( "min-width-80em && min-height-40em", "max-width-120em && min-height-60em" )
         {
             ...
@@ -787,6 +787,16 @@ This coding standard favors readability over compactness, by :
         *   order
         *   float
         *   clear
+        *   columns
+        *   column-count
+        *   column-width
+        *   column-span
+        *   column-fill
+        *   column-gap
+        *   column-rule
+        *   column-rule-width
+        *   column-rule-style
+        *   column-rule-color
         *   shape-outside
         *   clip-path
         *   object-fit
