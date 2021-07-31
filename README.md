@@ -20,9 +20,9 @@ Efficiently develop code and applications with the following qualities :
 
 This coding standard targets self-documenting code, and therefore favors readability over compactness by :
 
-*   Forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
-*   Using letter cases to distinguish classes, class members and local variables;
-*   Including the class name in attributes and variable names.
+*   forbidding the use of cryptic acronyms, abbreviations, prefixes and suffixes;
+*   using only letter cases to distinguish classes, class members and local variables;
+*   including the class name in attributes and variable names.
 
 ## General rules
 
