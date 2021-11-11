@@ -770,6 +770,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   grid-template
         *   grid-template-rows
         *   grid-template-columns
+        *   grid-template-areas
         *   grid-auto-rows
         *   grid-gap
         *   gap
