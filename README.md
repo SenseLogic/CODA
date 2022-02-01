@@ -869,6 +869,51 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
+*   Prefix rules by their component and parent names
+
+    ```html
+    <style file="header_menu.styl">
+        .header-menu
+        {
+            ...
+        }
+
+        .header-menu-button-container
+        {
+            ...
+        }
+
+        .header-menu-button
+        {
+            ...
+        }
+
+        .header-menu-button-image
+        {
+            ...
+        }
+
+        .header-menu-button-text
+        {
+            ...
+        }
+    </style>
+    <div id="header-menu" class="header-menu">
+        <div class="header-menu-button-container">
+            <div class="header-menu-button">
+                <img class="header-menu-button-image" src="..." alt="..."/>
+                <span class="header-menu-button-text">
+                    ...
+                </span>
+            </div>
+            ...
+        </div>
+    </div>
+    <script file="header_menu.js">
+        ...
+    </script>
+    ```
+
 ## HTML rules
 
 *   Use double quotes for string literals.
