@@ -869,51 +869,6 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
-*   Prefix rules by their component and parent names
-
-    ```html
-    <style file="header_menu.styl">
-        .header-menu
-        {
-            ...
-        }
-
-        .header-menu-button-container
-        {
-            ...
-        }
-
-        .header-menu-button
-        {
-            ...
-        }
-
-        .header-menu-button-image
-        {
-            ...
-        }
-
-        .header-menu-button-text
-        {
-            ...
-        }
-    </style>
-    <div id="header-menu" class="header-menu">
-        <div class="header-menu-button-container">
-            <div class="header-menu-button">
-                <img class="header-menu-button-image" src="..." alt="..."/>
-                <span class="header-menu-button-text">
-                    ...
-                </span>
-            </div>
-            ...
-        </div>
-    </div>
-    <script file="header_menu.js">
-        ...
-    </script>
-    ```
-
 ## HTML rules
 
 *   Use double quotes for string literals.
@@ -955,7 +910,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   shared script
     *   inline script
 
-*   Prefix all **classes** by the component name in **kebab-case**.
+*   Prefix all **classes** by the component name in **kebab-case**, and content classes by their parent container name.
 
     ```php
     <style file="header_menu.styl">
@@ -980,6 +935,16 @@ This coding standard targets self-documenting code, and therefore favors readabi
             ...
         }
 
+        .header-menu-button-image
+        {
+            ...
+        }
+
+        .header-menu-button-text
+        {
+            ...
+        }
+
         ...
     </style>
     <style>
@@ -988,13 +953,19 @@ This coding standard targets self-documenting code, and therefore favors readabi
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
             <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
+                <img class="header-menu-button-image" src="..." alt="..."/>
+                <span class="header-menu-button-text">
+                    <# .GetText( 'HeaderMenuHomeButton' ) #>
+                </span>
             </div>
             ...
         </div>
         <div class="header-menu-mobile-button-container">
             <div class="header-menu-mobile-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
-                <# .GetText( 'HeaderMenuHomeButton' ) #>
+                <img class="header-menu-button-image" src="..." alt="..."/>
+                <span class="header-menu-button-text">
+                    <# .GetText( 'HeaderMenuHomeButton' ) #>
+                </span>
             </div>
             ...
         </div>
