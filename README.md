@@ -952,19 +952,16 @@ This coding standard targets self-documenting code, and therefore favors readabi
     </style>
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
-            <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
+            <div class="header-menu-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
                 <img class="header-menu-button-image" src="/static/image/header_menu/home_button.svg"/>
                 <span class="header-menu-button-text">
                     <# .GetText( 'HeaderMenuHomeButton' ) #>
                 </span>
             </div>
-            ...
-        </div>
-        <div class="header-menu-mobile-button-container">
-            <div class="header-menu-mobile-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
-                <img class="header-menu-button-image" src="/static/image/header_menu/home_button.svg"/>
+            <div class="header-menu-button" data-view-name="contact" onclick="CloseHeaderMenu(); ShowView( 'contact' )">
+                <img class="header-menu-button-image" src="/static/image/header_menu/contact_button.svg"/>
                 <span class="header-menu-button-text">
-                    <# .GetText( 'HeaderMenuHomeButton' ) #>
+                    <# .GetText( 'HeaderMenuContactButton' ) #>
                 </span>
             </div>
             ...
