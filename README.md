@@ -910,7 +910,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   shared script
     *   inline script
 
-*   Prefix all **classes** by the component name in **kebab-case**, and content classes by their parent container name.
+*   Prefix all **classes** by the component name in **kebab-case**, and **child** classes by their **parent** class name.
 
     ```php
     <style file="header_menu.styl">
