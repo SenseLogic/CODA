@@ -953,7 +953,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
             <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
-                <img class="header-menu-button-image" src="..." alt="..."/>
+                <img class="header-menu-button-image" src="/static/image/header_menu/home_button.svg"/>
                 <span class="header-menu-button-text">
                     <# .GetText( 'HeaderMenuHomeButton' ) #>
                 </span>
@@ -962,7 +962,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         </div>
         <div class="header-menu-mobile-button-container">
             <div class="header-menu-mobile-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
-                <img class="header-menu-button-image" src="..." alt="..."/>
+                <img class="header-menu-button-image" src="/static/image/header_menu/home_button.svg"/>
                 <span class="header-menu-button-text">
                     <# .GetText( 'HeaderMenuHomeButton' ) #>
                 </span>
