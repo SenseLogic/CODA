@@ -724,6 +724,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   overflow-x
         *   box-sizing
         *   scrollbar-width
+        *   inset
         *   margin
         *   margin-top
         *   margin-bottom
