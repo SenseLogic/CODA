@@ -726,6 +726,12 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   scrollbar-width
         *   inset
         *   margin
+        *   margin-block
+        *   margin-block-start
+        *   margin-block-end
+        *   margin-inline
+        *   margin-inline-start
+        *   margin-inline-end
         *   margin-top
         *   margin-bottom
         *   margin-left
@@ -816,8 +822,12 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   background-size
         *   background-attachment
         *   box-shadow
+        *   filter
     *   Typography
         *   list-style-type
+        *   direction
+        *   writing-mode
+        *   text-orientation
         *   line-height
         *   font
         *   font-family
