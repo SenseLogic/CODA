@@ -858,6 +858,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   color
     *   Behavior
         *   resize
+        *   scroll-behavior
         *   scroll-snap-type
         *   scroll-snap-points-y
         *   scroll-snap-points-x
