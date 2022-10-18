@@ -743,6 +743,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   width
         *   min-width
         *   max-width
+        *   aspect-ratio
         *   border
         *   border-top
         *   border-bottom
