@@ -824,6 +824,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   background-attachment
         *   box-shadow
         *   filter
+        *   backdrop-filter
     *   Typography
         *   list-style-type
         *   direction
