@@ -345,6 +345,22 @@ This coding standard targets self-documenting code, and therefore favors readabi
     }
     ```
 
+*   Favor indexed iterations over foreach iterations, and foreach iterations over functional iterations.
+
+    ```cs
+    for ( enemy_index = 0;
+          enemy_index < EnemyList.Count;
+          ++enemy_index )
+    {
+        ...
+    }
+
+    foreach ( ENEMY enemy in EnemyList )
+    {
+        ...
+    }
+    ```
+
 *   Put the scalar or constant multiplier after the multiplicand expression.
 
     ```cs
@@ -967,13 +983,13 @@ This coding standard targets self-documenting code, and therefore favors readabi
     </style>
     <div id="header-menu" class="header-menu">
         <div class="header-menu-button-container"
-            <div class="header-menu-button" data-view-name="home" onclick="CloseHeaderMenu(); ShowView( 'home' )">
+            <div class="header-menu-button" data-view-name="home" onclick="ShowView( 'home' )">
                 <img class="header-menu-button-image" src="/static/image/header_menu/home_button.svg"/>
                 <span class="header-menu-button-text">
                     <# .GetText( 'HeaderMenuHomeButton' ) #>
                 </span>
             </div>
-            <div class="header-menu-button" data-view-name="contact" onclick="CloseHeaderMenu(); ShowView( 'contact' )">
+            <div class="header-menu-button" data-view-name="contact" onclick="HandleHeaderMenuButtonClickEvent( event.currentTarget )">
                 <img class="header-menu-button-image" src="/static/image/header_menu/contact_button.svg"/>
                 <span class="header-menu-button-text">
                     <# .GetText( 'HeaderMenuContactButton' ) #>
@@ -983,7 +999,14 @@ This coding standard targets self-documenting code, and therefore favors readabi
         </div>
     </div>
     <script file="header_menu.js">
-        ...
+        // -- FUNCTIONS
+
+        function HandleHeaderMenuButtonClickEvent(
+            header_menu_button_element
+            )
+        {
+            ShowView( header_menu_button_element.dataset.viewName );
+        }
     </script>
     <script>
         ...
@@ -991,6 +1014,8 @@ This coding standard targets self-documenting code, and therefore favors readabi
     ```
 
 ## Guidelines
+
+*   Write your code so that your imaginary five years old little brother can easily understand the intent of **each individual line of code without any other context**.
 
 *   **Design before you program**, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
@@ -1009,6 +1034,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   choosing better method and parameter names;
     *   using local variables to store intermediate results;
     *   splitting the code of a lengthy method into smaller methods called in sequence.
+    *   keeping your functions small enough so that they can do exactly what their name says, and nothing more.
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
