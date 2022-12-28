@@ -33,6 +33,8 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   easy to understand just by itself;
     *   impossible to guess who has actually worked on it.
 
+*   Use the concise functions provided by the high level libraries instead of calling directly the low level functions they wrap.
+
 *   Use **American English** for all the code, including comments.
 
     ```cs
@@ -399,13 +401,6 @@ This coding standard targets self-documenting code, and therefore favors readabi
     tank_shell.cpp
     tank_shell.hpp
     ```
-
-*   Use the class name in uppercase as Unity file name.
-
-    ```cs
-    TANK_SHELL.cs
-    ```
-
 *   Group the class elements by category, and declare them in this order :
 
     *   Imports.
@@ -1013,9 +1008,23 @@ This coding standard targets self-documenting code, and therefore favors readabi
     </script>
     ```
 
-## Guidelines
+## Unity rules
 
-*   Write your code so that your imaginary five years old little brother can easily understand the intent of **each individual line of code without any other context**.
+*   Use the class name in uppercase as Unity file name.
+
+    ```cs
+    TANK_SHELL.cs
+    ```
+
+*   Name your scene assets and files in **PascalCase**.
+
+## JavaScript rules
+
+*   When using front-side rendering libraries like Svelte, React or Kwik :
+    *   name classes in **PascalCase**;
+    *   name variables and type members in **camelCase**.
+
+## Guidelines
 
 *   **Design before you program**, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
 
@@ -1029,7 +1038,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Immediately **refactor components** when their modularity or reusability needs to be improved.
 
-*   Instead of adding comments to explain the code intent, **refactor the code** to make it easy to understand by :
+*   Instead of adding comments to explain the code intent, **refactor the code** to make it easy to understand by your imaginary five years old little brother by :
 
     *   choosing better method and parameter names;
     *   using local variables to store intermediate results;
