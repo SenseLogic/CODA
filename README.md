@@ -1047,7 +1047,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Immediately **refactor components** when their modularity, reusability or readability needs to be fixed.
 
-*   Write **clean modular code** that will allow you to **ship faster**, and fix any sloppy code that might impede your future development speed.
+*   Write **clean modular code** that will allow you to ship faster, and fix any sloppy code that might impede your future development speed.
 
 *   Try be a factor of **order** and not of chaos, so always leave the code in a better state than you found it (**Boy Scout Rule**).
 
