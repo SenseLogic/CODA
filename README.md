@@ -1049,7 +1049,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Write clean modular code that will allow you to **ship faster**, and fix any sloppy code that might impede your future development speed.
 
-*   Try be a factor of **order** and not of chaos, so always **leave the code in a better state than you found it** (Boy Scout Rule).
+*   Try be a factor of **order** and not of chaos, so always leave the code in a better state than you found it (**Boy Scout Rule**).
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
