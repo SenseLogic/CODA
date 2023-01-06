@@ -1045,11 +1045,11 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   splitting the code of a lengthy method into smaller methods called in sequence;
     *   keeping your functions small enough so that they do exactly what their name and parameters says, and nothing more;
 
-*   Immediately **refactor components** when their modularity, reusability or readability needs to be improved.
+*   Immediately **refactor components** when their modularity, reusability or readability needs to be fixed.
 
-*   Clean code actually allows you to **ship faster**, since unfixed sloppy code will always impede your future development speed.
+*   Write clean modular code that will allow you to **ship faster**, and fix any sloppy code that might impede your future development speed.
 
-*   When editing existing code, be a factor of **order** and not of chaos, so always **leave the code in a better state than you found it** (Boy Scout Rule).
+*   Try be a factor of **order** and not of chaos, so always **leave the code in a better state than you found it** (Boy Scout Rule).
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
