@@ -1049,7 +1049,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Clean code actually allows you to **ship faster**, since unfixed sloppy code will always impede your future development speed.
 
-*   When editing existing code, be a factor of **order** and not of chaos, so always leave the code in a **better state than you found it** (boy-scout rule) by .
+*   When editing existing code, be a factor of **order** and not of chaos, so always **leave the code in a better state than you found it** (Boy Scout Rule).
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
