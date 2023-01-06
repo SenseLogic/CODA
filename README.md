@@ -1036,17 +1036,20 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
 
-*   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
+*   Write your code so that even your 10-year-old little brother could understand what it does.
 
-    *   choosing unambiguous method and parameter names written in English grammatical order, so that even your little brother could understand your code;
+*   So instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
+
+    *   choosing unambiguous method and parameter names written in English-like order;
     *   using local variables to store intermediate results;
     *   splitting the code of a lengthy method into smaller methods called in sequence;
     *   keeping your functions small enough so that they do exactly what their name and parameters says, and nothing more;
 
 *   Immediately **refactor components** when their modularity, reusability or readability needs to be improved.
 
-*   Always leave the code in a better state than you found it (boy-scout rule), to make sure you are a factor of order and not of chaos,
-    since poorly written code will eventually slow you down in the future, while clean modular code will actually allow you to ship faster.
+*   Clean code actually allows you to **ship faster**, since unfixed sloppy code will always impede your future development speed.
+
+*   When editing existing code, be a factor of **order** and not of chaos, so always leave the code in a **better state than you found it** (boy-scout rule) by .
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
