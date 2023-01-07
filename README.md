@@ -42,7 +42,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     MoveForward();
     ```
 
-*   Use the English language order in compound identifiers.
+*   Use the **English language order** in compound identifiers.
 
     ```cs
     CreateEnemyListByCategoryDictionary();
