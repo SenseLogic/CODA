@@ -1053,7 +1053,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
 
-*   When you see **design or implementation flaws**, correct them immediately, if you put them off, they will eventually build up,
+*   When you see **design or implementation flaws**, correct them immediately. If you put them off, they will eventually build up,
     so always leave the code in a better state than you found it.
 
 *   Never write sloppy code when you are on a hurry, this will actually slow you down in the future.
