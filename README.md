@@ -1026,7 +1026,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 ## Guidelines
 
-*   **Design before you program**, to avoid losing precious time in developing the wrong solution to the wrong problem, by quickly writing :
+*   **Design before you program** by quickly writing :
 
     *   a short text or UI flow explaining how to use the application, to optimize the **application interface** before implementing it;
     *   a short text explaining what the application components will do, to optimize the **application architecture** before implementing it;
@@ -1036,20 +1036,23 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
 
-*   Write your code so that even your 10-year-old little brother could understand what it does.
+*   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
 
-*   So instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
-
-    *   choosing unambiguous method and parameter names written in English-like order;
+    *   choosing consistent and unambiguous method and parameter names which sound like correct English;
     *   using local variables to store intermediate results;
     *   splitting the code of a lengthy method into smaller methods called in sequence;
     *   keeping your functions small enough so that they do exactly what their name and parameters says, and nothing more;
 
-*   Immediately **refactor components** when their modularity, reusability or readability needs to be fixed.
+*   Develop **baby code** that is so simple and obvious that even a child could quickly understand what it does.
 
-*   Write **clean modular code** that will allow you to ship faster, and fix any sloppy code that might impede your future development speed.
+*   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
 
-*   Try be a factor of **order** and not of chaos, so always leave the code in a better state than you found it (**Boy Scout Rule**).
+*   Fix any **design or implementation flaw** as you notice it.
+
+*   **Clean maintainable code** helps you **ship faster**, so even under time pressure, don't write any bit of sloppy code,
+    this will slow you down in the future.
+
+*   Always leave the code in a better state than you found it (**Boy Scout Rule**). Be a source of **order**, not of chaos.
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
