@@ -35,11 +35,17 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Use the concise functions provided by the high level libraries instead of calling directly the low level functions they wrap.
 
-*   Use **American English** for all the code, including comments.
+*   Use **American English** everywhere, including in the comments and asset names.
 
     ```cs
     InitializeColor();
     MoveForward();
+    ```
+
+*   Use the natural English language order in compound names.
+
+    ```cs
+    CreateEnemyListByCategoryDictionary();
     ```
 
 *   Use the **meter** as the default distance unit.
@@ -1038,19 +1044,19 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
 
-    *   choosing consistent and unambiguous method and parameter names which sound like correct English;
+    *   choosing clearer class, attribute, method, function, parameter and variable names;
     *   using local variables to store intermediate results;
-    *   splitting the code of a lengthy method into smaller methods called in sequence;
-    *   keeping your functions small enough so that they do exactly what their name and parameters says, and nothing more;
+    *   splitting long functions into smaller methods called in sequence;
+    *   keeping your functions small enough so that they just do what their name says, and nothing more.
 
-*   Develop **baby code** that is so simple and obvious that even a child could quickly understand what it does.
+*   Develop **baby code** that looks so simple and obvious that even a child could quickly understand what it does.
 
 *   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
 
-*   Fix any **design or implementation flaw** as you notice it.
+*   When you see **design or implementation flaws**, correct them immediately, if you put them off, they will eventually build up.
 
-*   **Clean maintainable code** helps you **ship faster**, so even under time pressure, don't write any bit of sloppy code,
-    this will slow you down in the future.
+*   Never write sloppy code when you are on a hurry, this will inevitably slow you down in the future.
+    Only **clean maintainable code** will actually help you **ship faster**,
 
 *   Always leave the code in a better state than you found it (**Boy Scout Rule**). Be a source of **order**, not of chaos.
 
