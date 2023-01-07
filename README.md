@@ -35,7 +35,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Use the concise functions provided by the high level libraries instead of calling directly the low level functions they wrap.
 
-*   Use **American English** everywhere, including in the comments and asset names.
+*   Use **American English** everywhere.
 
     ```cs
     InitializeColor();
