@@ -1049,7 +1049,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   splitting long functions into smaller methods called in sequence;
     *   keeping your functions small enough so that they just do what their name says, and nothing more.
 
-*   Develop **baby code** that looks so simple and obvious that even a child could quickly understand what it does.
+*   Develop **"baby code"** that looks so simple and obvious that even a child could quickly understand what it does.
 
 *   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
 
