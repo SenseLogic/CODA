@@ -1054,12 +1054,12 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
 
 *   When you see **design or implementation flaws**, correct them immediately, if you put them off, they will eventually build up.
+    Always leave the code in a better state than you found it.
 
 *   Never write sloppy code when you are on a hurry, this will actually slow you down in the future.
     Developing **clean maintainable code** is what will really help you **ship faster**.
-    Always be a source of **order**, not of chaos.
+    Be a source of **order**, not of chaos.
 
-*   Follow the **"Boy Scout Rule"** by always leaving the code in a better state than you found it.
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
