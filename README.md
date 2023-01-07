@@ -1057,9 +1057,9 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Never write sloppy code when you are on a hurry, this will actually slow you down in the future.
     Developing **clean maintainable code** is what will really help you **ship faster**.
+    Always be a source of **order**, not of chaos.
 
 *   Follow the **"Boy Scout Rule"** by always leaving the code in a better state than you found it.
-    This way you'll be a source of **order**, not of chaos.
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
