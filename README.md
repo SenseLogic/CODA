@@ -45,7 +45,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Use the **English language order** in compound identifiers.
 
     ```cs
-    CreateEnemyListByCategoryDictionary();
+    enemy_list_by_category_dictionary = GetEnemyListByCategoryDictionary();
     ```
 
 *   Use the **meter** as the default distance unit.
