@@ -901,6 +901,20 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
+*   Declare Stylus constants in **PascalCase**.
+
+    ```css
+    RedColor = #F87272;
+    RedColor100 = darken( RedColor, 80% );
+    ```
+
+*   SCSS constants in **kebab-case**.
+
+    ```css
+    $red-color: #F87272;
+    $red-color-100: mix( $red-color, #000000, 80% );
+    ```
+
 ## HTML rules
 
 *   Use double quotes for string literals.
@@ -910,15 +924,15 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Declare tag **attributes** in this order :
 
     *   id
-    *   class (ordered by increasing specificity)
-    *   style
-    *   data-*
-    *   tag-specific attributes (src, href, etc)
-    *   on*
+    *   class sorted by increasing specificity
+    *   style sorted as explained above
+    *   data-* in alphabetical order
+    *   tag-specific attributes (src, href, etc) in alphabetical order
+    *   on* in alphabetical order
 
     ```html
     <div id="header-menu-home-button"
-         class="header-menu-button header-menu-home-button"
+         class="button scaled-button header-menu-button header-menu-home-button"
          style="margin-left: auto; background-image: url( '/static/image/header_menu/home_button.svg' )"
          data-view-name="home"
          onclick="ShowView( 'home' )">
@@ -1022,13 +1036,13 @@ This coding standard targets self-documenting code, and therefore favors readabi
     TANK_SHELL.cs
     ```
 
-*   Name your scene assets and files in **PascalCase**.
+*   To be consistent with existing assets, name your scene assets and files in **PascalCase**.
 
 ## JavaScript rules
 
-*   When using front-side rendering libraries like Svelte, React or Kwik :
-    *   name classes in **PascalCase**;
-    *   name variables and type members in **camelCase**.
+*   To be consistent with existing libraries, when using front-side rendering libraries like Svelte, React or Kwik :
+    *   name types and file names in **PascalCase**;
+    *   name type members, function parameters and local variables in **camelCase**.
 
 ## Guidelines
 
@@ -1042,6 +1056,10 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
 
+*   Don't repeat yourself, create **reusable** components that you can use across one or several projects.
+
+*   Be a source of **order**, not of chaos. So even if you are on a hurry, continue to develop **clean maintainable code**, this is will actually allow you to **ship faster**.
+
 *   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
 
     *   choosing clearer class, attribute, method, function, parameter and variable names;
@@ -1051,20 +1069,14 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Develop **"baby code"** that looks so simple and obvious that even a child could quickly understand what it does.
 
-*   Immediately **refactor components** and their **client code** when the their modularity or reusability needs to be fixed.
-
-*   When you see **design or implementation flaws**, correct them immediately. If you put them off, they will eventually build up,
+*   When you see **design or implementation flaws**, correct them immediately. If you put them off, they will eventually build up and slow you down in the future,
     so always leave the code in a better state than you found it.
-
-*   Never write sloppy code when you are on a hurry, this will actually slow you down in the future.
-    Developing **clean maintainable code** is what will really help you **ship faster**, so be a source of **order**, not of chaos.
-
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
 
 *   Check invalid method parameters with **assertions** in the debug build.
 
-*   Preferably use :
+*   For performance reasons, preferably use :
 
     *   public attributes without getters and setters.
     *   public non-virtual methods.
@@ -1073,8 +1085,8 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Create automated **unit tests**.
 
-*   **Test your changes** extensively before pushing them under source control.
-
+*   Only **stable tested code** can be pushed under source control, so always **test your changes** extensively before pushing them.
+    .
 ## Version
 
 1.2
