@@ -1056,7 +1056,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
 
-*   Don't repeat yourself, create **reusable components** that you can use across one or several projects.
+*   Don't repeat yourself, create **reusable components** that you can use several times across one or several projects.
 
 *   Be a source of **order**, not of chaos. So even if you are on a hurry, continue to develop **clean maintainable code**, this will actually allow you to **ship faster**.
 
