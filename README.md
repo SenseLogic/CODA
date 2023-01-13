@@ -1065,7 +1065,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   using **clearer names** for the classes, attributes, functions, parameters and variables;
     *   using local variables to store **intermediate results**;
     *   splitting long functions into several **smaller functions** called in sequence;
-    *   keeping your functions small enough so that they just **do what their name says**, and nothing more.
+    *   keeping your functions small enough so that they **just do what their name says**, and nothing more.
 
 *   Develop "**baby code**" that looks so simple and obvious that even a child could quickly understand what it does.
 
