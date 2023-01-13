@@ -1058,7 +1058,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Don't repeat yourself, create **reusable components** that you can use across one or several projects.
 
-*   Be a source of **order**, not of chaos. So even if you are on a hurry, continue to develop **clean maintainable code**, this is will actually allow you to **ship faster**.
+*   Be a source of **order**, not of chaos. So even if you are on a hurry, continue to develop **clean maintainable code**, this will actually allow you to **ship faster**.
 
 *   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
 
