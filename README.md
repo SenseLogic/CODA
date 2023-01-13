@@ -1062,7 +1062,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
 
-    *   choosing clearer class, attribute, method, function, parameter and variable names;
+    *   choosing clearer class, attribute, method, parameter and variable names;
     *   using local variables to store intermediate results;
     *   splitting long functions into smaller methods called in sequence;
     *   keeping your functions small enough so that they just do what their name says, and nothing more.
