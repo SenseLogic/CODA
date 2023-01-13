@@ -1040,7 +1040,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 ## JavaScript rules
 
-*   To be consistent with existing libraries, when using front-side rendering libraries like Svelte, React or Kwik :
+*   To be consistent with existing libraries, when using front-side rendering libraries like Svelte, React or Qwik :
     *   name types and file names in **PascalCase**;
     *   name type members, function parameters and local variables in **camelCase**.
 
