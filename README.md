@@ -1067,7 +1067,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   splitting long functions into smaller ones called in sequence;
     *   keeping your functions small enough so that they just do what their name says, and nothing more.
 
-*   Develop **"baby code"** that looks so simple and obvious that even a child could quickly understand what it does.
+*   Develop "**baby code**" that looks so simple and obvious that even a child could quickly understand what it does.
 
 *   When you see **design or implementation flaws**, correct them immediately. If you put them off, they will eventually build up and slow you down in the future,
     so always leave the code in a better state than you found it.
