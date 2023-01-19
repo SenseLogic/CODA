@@ -1040,7 +1040,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 ## JavaScript rules
 
-*   To be consistent with existing libraries, when using front-side rendering libraries like Svelte, React or Qwik :
+*   If the project uses a framework (Svelte, React, Qwik, etc) :
     *   name types and file names in **PascalCase**;
     *   name type members, function parameters and local variables in **camelCase**.
 
@@ -1065,11 +1065,10 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   using **clearer names** for the classes, attributes, functions, parameters and variables;
     *   using local variables to store **intermediate results**;
     *   splitting long functions into several **smaller functions** called in sequence;
-    *   keeping your functions small enough so that they **just do what their name says**, and nothing more.
+    *   keeping your functions small enough so that they **just do what their name says**, and nothing more;
+    *   implement **English-like code** that reads so naturally that even a child could understand what it does.
 
-*   Develop "**baby code**" that looks so simple and obvious that even a child could quickly understand what it does.
-
-*   When you see **design or implementation flaws**, correct them immediately. If you put them off, they will eventually build up and slow you down in the future,
+*   When you see **design or implementation flaws**, fix them immediately. If you put them off, they will eventually build up and slow you down in the future,
     so always leave the code in a better state than you found it.
 
 *   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
@@ -1086,7 +1085,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Create automated **unit tests**.
 
 *   Only **stable tested code** can be pushed under source control, so always **test your changes** extensively before pushing them.
-    .
+
 ## Version
 
 1.2
