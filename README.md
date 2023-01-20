@@ -26,14 +26,57 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 ## General rules
 
-*   Develop the application and its components with simple, robust and efficient code which will be easy to understand, extend and debug by any programmer in the team.
+*   **Design before you code** by quickly writing :
 
-*   Develop any piece of code so that it's :
+    *   a short text or UI flow showing how to use the application, to optimize the **user interface** before implementing it;
+    *   a short text or database design showing how the information will be stored, to optimize the **data architecture** before implementing it;
+    *   a short text or component design showing how the application will be structured, to optimize the **component architecture** before implementing it;
+    *   a short text or test code showing how to use the application components, to optimize the **component interface** before implementing it.
 
-    *   easy to understand just by itself;
-    *   impossible to guess who has actually worked on it.
+*   Develop programs **gradually**, starting with the data components, then implementing one external feature at a time.
 
-*   Use the concise functions provided by the high level libraries instead of calling directly the low level functions they wrap.
+*   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
+
+*   Don't repeat yourself, create **reusable components** that you can use several times across one or several projects.
+
+*   Develop the application and its components with **simple** **efficient** **maintainable** code that :
+    *   is stable and robust;
+    *   is easy to understand just by itself, without comments or surrounding context;
+    *   can be easily extended and debugged by any programmer in the team;
+    *   fully complies with the coding standard, to the point it's impossible to guess who has worked on it.
+
+*   Instead of adding comments to explain the code intent, **refactor the code itself** to make this intent obvious by :
+
+    *   using **clear consistent unambiguous names** for all classes, attributes, functions, parameters and variables;
+    *   using local variables to store **intermediate results**;
+    *   splitting long functions into several **smaller functions** called in sequence;
+    *   keeping your functions small enough so that they **just do what their name says**, and nothing more;
+    *   implement **English-like code** that reads so naturally that even a child could understand what it does.
+
+*   Even if you are on a hurry :
+    *   immediately fix any **design or implementation flaw** you see, or else technical debt will accumulate and slow you down in the future.
+    *   continue to develop **clean maintainable code**, this will actually allow you to **ship faster**.
+
+*   Be a source of **order** instead of chaos, so always leave the code in a better state than you found it.
+
+*   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
+
+*   Check invalid method parameters with **assertions** in the debug build.
+
+*   For performance reasons, preferably use :
+
+    *   public attributes without getters and setters.
+    *   public non-virtual methods.
+    *   virtual methods instead of delegates.
+    *   state classes instead of coroutines.
+
+*   Use private attributes and methods only where you need to.
+
+*   Create automated **unit tests**.
+
+*   Only push **stable tested code** under source control, first **test your changes** extensively.
+
+*   Use the concise functions provided by the project high level libraries instead of calling directly the low level functions they wrap.
 
 *   Use **American English** everywhere.
 
@@ -1043,48 +1086,6 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   If the project uses a framework (Svelte, React, Qwik, etc) :
     *   name types and file names in **PascalCase**;
     *   name type members, function parameters and local variables in **camelCase**.
-
-## Guidelines
-
-*   **Design before you program** by quickly writing :
-
-    *   a short text or UI flow explaining how to use the application, to optimize the **application interface** before implementing it;
-    *   a short text explaining what the application components will do, to optimize the **application architecture** before implementing it;
-    *   a short text or test code demonstrating how to use the application components, to optimize the **component interface** before implementing it.
-
-*   Develop programs **gradually**, one feature at a time, using **simple** and **efficient** code.
-
-*   Don't overgineer your code, choose **simple modular designs** which can easily be extended.
-
-*   Don't repeat yourself, create **reusable components** that you can use several times across one or several projects.
-
-*   Be a source of **order**, not of chaos. So even if you are on a hurry, continue to develop **clean maintainable code**, this will actually allow you to **ship faster**.
-
-*   Instead of adding comments to explain the code intent, **refactor the code** to make it obvious by :
-
-    *   using **clearer names** for the classes, attributes, functions, parameters and variables;
-    *   using local variables to store **intermediate results**;
-    *   splitting long functions into several **smaller functions** called in sequence;
-    *   keeping your functions small enough so that they **just do what their name says**, and nothing more;
-    *   implement **English-like code** that reads so naturally that even a child could understand what it does.
-
-*   When you see **design or implementation flaws**, fix them immediately. If you put them off, they will eventually build up and slow you down in the future,
-    so always leave the code in a better state than you found it.
-
-*   Make the application **resilient** to external conditions (network failures, missing or corrupted files, etc).
-
-*   Check invalid method parameters with **assertions** in the debug build.
-
-*   For performance reasons, preferably use :
-
-    *   public attributes without getters and setters.
-    *   public non-virtual methods.
-    *   virtual methods instead of delegates.
-    *   state classes instead of coroutines.
-
-*   Create automated **unit tests**.
-
-*   Only **stable tested code** can be pushed under source control, so always **test your changes** extensively before pushing them.
 
 ## Version
 
