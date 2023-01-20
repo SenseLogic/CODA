@@ -40,10 +40,10 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Don't repeat yourself, create **reusable components** that you can use several times across one or several projects.
 
 *   Develop the application and its components with **simple** **efficient** **maintainable** code that :
-    *   is stable and robust;
-    *   is easy to understand just by itself, without comments or surrounding context;
-    *   can be easily extended and debugged by any programmer in the team;
-    *   fully complies with the coding standard, to the point it's impossible to guess who has worked on it.
+    *   is **stable** and **robust**;
+    *   is **easy to understand** just by itself, without comments or surrounding context;
+    *   can be easily **extended** and debugged by any programmer in the team;
+    *   **fully** complies with the coding standard, to the point it's impossible to guess who has worked on it.
 
 *   Instead of adding comments to explain the code intent, **refactor the code itself** to make this intent obvious by :
 
