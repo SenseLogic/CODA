@@ -55,7 +55,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Even if you are on a hurry :
     *   immediately fix any **design or implementation flaw** you see, or else technical debt will accumulate and slow you down in the future.
-    *   continue to develop **clean maintainable code**, this will actually allow you to **ship faster**.
+    *   continue to develop **clean maintainable code**, this will actually allow you to **ship faster** by helping you maintain a high level of productivity while the project size grows over time.
 
 *   Be a source of **order** instead of chaos, so always leave the code in a better state than you found it.
 
