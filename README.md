@@ -1079,12 +1079,12 @@ This coding standard targets self-documenting code, and therefore favors readabi
     TANK_SHELL.cs
     ```
 
-*   To be consistent with existing assets, name your scene assets and files in **PascalCase**.
+*   Name your scene assets and files in **PascalCase**.
 
 ## JavaScript rules
 
-*   If the project uses a framework (Svelte, React, Qwik, etc) :
-    *   name types and file names in **PascalCase**;
+*   In projects based on Svelte, React or Qwik :
+    *   name component types and file names in **PascalCase**;
     *   name type members, function parameters and local variables in **camelCase**.
 
 ## Version
