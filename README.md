@@ -1089,8 +1089,8 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 ## Rust rules
 
-    *   name types in **PascalCase**;
-    *   name type members, functions, function parameters and local variables in **snake_case**.
+*   Name types in **PascalCase**;
+*   Name type members, functions, function parameters and local variables in **snake_case**.
 
 ## Version
 
