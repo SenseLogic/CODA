@@ -1081,11 +1081,16 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Name your scene assets and files in **PascalCase**.
 
-## JavaScript rules
+## JavaScript and Dart rules
 
-*   In projects based on Svelte, React or Qwik :
-    *   name component types and file names in **PascalCase**;
-    *   name type members, function parameters and local variables in **camelCase**.
+*   In SvelteKit, Next and Flutter projects :
+    *   Name types and file names in **PascalCase**;
+    *   Name type members, function parameters and local variables in **camelCase**.
+
+## Rust rules
+
+    *   name types in **PascalCase**;
+    *   name type members, functions, function parameters and local variables in **snake_case**.
 
 ## Version
 
