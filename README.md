@@ -1071,6 +1071,9 @@ This coding standard targets self-documenting code, and therefore favors readabi
     </script>
     ```
 
+*   Use single quotes for string literals.
+*   Use double quotes for interpolated string literals.
+
 ## Unity rules
 
 *   Use the class name in uppercase as Unity file name.
@@ -1081,16 +1084,26 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Name your scene assets and files in **PascalCase**.
 
-## JavaScript and Dart rules
+## SvelteKit rules
 
-*   In SvelteKit, Next and Flutter projects :
-    *   Name types and file names in **PascalCase**;
-    *   Name type members, function parameters and local variables in **camelCase**.
+*   Name types and file names in **PascalCase**;
+*   Name type members, function parameters and local variables in **camelCase**.
+*   Declare variables dynamically.
+*   Use single quotes for string literals.
+
+## Flutter rules
+
+*   Name types and file names in **PascalCase**;
+*   Name type members, function parameters and local variables in **camelCase**.
+*   Declare variables dynamically.
+*   Use single quotes for string literals.
 
 ## Rust rules
 
 *   Name types in **PascalCase**;
 *   Name type members, functions, function parameters and local variables in **snake_case**.
+*   Declare variables dynamically.
+*   Use single quotes for string literals.
 
 ## Version
 
