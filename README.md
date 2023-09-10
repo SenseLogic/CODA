@@ -122,7 +122,8 @@ This coding standard targets self-documenting code, and therefore favors readabi
 *   Use **standard suffixes** :
 
     *   Index, Count
-    *   Array, List, Map, Dictionary
+    *   Array, List
+    *   Map, Dictionary
 
 *   Use **standard verbs** :
 
@@ -154,7 +155,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   Send, Receive
     *   Grant, Revoke
 
-*   Name your **types** (classes, structures, enumerations, etc) in **UPPER_CASE**, without articles.
+*   Name your **types** (classes, structures, enumerations, etc) in **SCREAMING_CASE**, without articles.
 
     ```cs
     class TANK_SHELL
@@ -358,7 +359,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
 *   Try to declare all local variables at the start of the method, to improve the algorithm readability.
 
-*   Group local variables of the same type, and sort the declarations by ascending types (lowercase, then PascalCase, then UPPER_CASE) and variable names, so that the declaration of a variable can be located at a glance.
+*   Group local variables of the same type, and sort the declarations by ascending types (lowercase, then PascalCase, then SCREAMING_CASE) and variable names, so that the declaration of a variable can be located at a glance.
 
     ```cs
     int
@@ -944,6 +945,12 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   animation-play-state
     *   Media queries (of increasing breakpoint size)
 
+*   Write color literals in **UPPERCASE**.
+
+    ```css
+    background-color: #C8C8C8;
+    ```
+
 *   Declare Stylus constants in **PascalCase**.
 
     ```css
@@ -951,7 +958,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     RedColor100 = darken( RedColor, 80% );
     ```
 
-*   SCSS constants in **kebab-case**.
+*   Declare SCSS constants in **kebab-case**.
 
     ```css
     $red-color: #F87272;
@@ -1083,20 +1090,6 @@ This coding standard targets self-documenting code, and therefore favors readabi
     ```
 
 *   Name your scene assets and files in **PascalCase**.
-
-## SvelteKit rules
-
-*   Name types and file names in **PascalCase**;
-*   Name type members, function parameters and local variables in **camelCase**.
-*   Declare variables dynamically.
-*   Use single quotes for string literals.
-
-## Flutter rules
-
-*   Name types and file names in **PascalCase**;
-*   Name type members, function parameters and local variables in **camelCase**.
-*   Declare variables dynamically.
-*   Use single quotes for string literals.
 
 ## Rust rules
 
