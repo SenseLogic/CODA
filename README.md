@@ -884,6 +884,15 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   background-repeat
         *   background-size
         *   background-attachment
+        *   mask
+        *   mask-clip
+        *   mask-composite
+        *   mask-image
+        *   mask-mode
+        *   mask-origin
+        *   mask-position
+        *   mask-repeat
+        *   mask-size
         *   box-shadow
         *   filter
         *   backdrop-filter
