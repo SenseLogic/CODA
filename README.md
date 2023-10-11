@@ -423,7 +423,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
 
     *   after `(` `[` `,`
     *   before `)` `]`
-    *   after `if` `while` `for` `foreach` `return` ...
+    *   after `if` `switch` `while` `for` `foreach` `return` ...
     *   around operators.
 
 *   Add exactly one empty line :
@@ -431,7 +431,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     *   around standard comments;
     *   after the local variable declarations;
     *   after the method preconditions;
-    *   between `if` `while` `for` `foreach` `do` `return` and the prior statement;
+    *   between `if` `switch` `while` `for` `foreach` `do` `try` `return` and the prior statement;
     *   between `}` and the next statement.
 
 *   Use standard file extensions.
@@ -451,6 +451,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
     tank_shell.cpp
     tank_shell.hpp
     ```
+
 *   Group the class elements by category, and declare them in this order :
 
     *   Imports.
