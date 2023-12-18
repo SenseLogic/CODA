@@ -782,6 +782,7 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   right
         *   transform
     *   Container
+        *   container-type
         *   overflow
         *   overflow-y
         *   overflow-x
