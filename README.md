@@ -780,7 +780,11 @@ This coding standard targets self-documenting code, and therefore favors readabi
         *   bottom
         *   left
         *   right
+        *   transform-origin
         *   transform
+        *   scale
+        *   rotate
+        *   translate
     *   Container
         *   container-type
         *   overflow
